@@ -4,9 +4,9 @@
 Usage:  python3 scripts/csv_to_data.py data/students.csv
 
 Columns (header row required; list columns are separated by ';'):
-  name, cgpa, domains, skills, clubs, internship, locations, summary, linkedin, photo
+  name, cgpa, domains, hard_skills, clubs, internship, locations, summary, linkedin, photo
 
-Only name is required. Leave the rest empty until the student submits them.
+Only name is required (cgpa is optional and only displayed, never filtered). Leave the rest empty until the student submits them.
 `domains` is ordered: the first one is the student's primary domain.
 LinkedIn tracking parameters (?utm_...) are stripped automatically.
 """
@@ -44,7 +44,7 @@ def main(src):
                 "batch": "2025",
                 "cgpa": float(cg) if cg else None,
                 "domains": lst(r.get("domains")),
-                "skills": lst(r.get("skills")),
+                "hardSkills": lst(r.get("hard_skills")),
                 "clubs": lst(r.get("clubs")),
                 "internship": (r.get("internship") or "").strip(),
                 "locations": lst(r.get("locations")),

@@ -1,6 +1,6 @@
 # Students for Hire · IIM Sirmaur
 
-A static website (no build step) where recruiters browse the batch, filter by domain, CGPA and experience, and open each student's LinkedIn profile.
+A static website (no build step) where recruiters browse the batch, filter by domain and hard skills, and open each student's LinkedIn profile.
 
 ## Run it locally
 
@@ -29,4 +29,4 @@ Repository Settings → Pages → Deploy from branch → `main` / root. The site
 | `css/styles.css` | Theme (IIM Sirmaur blue `#0061A0`, sun yellow `#FDC20C`) |
 | `data/students.js` | The student data the site reads |
 
-Settings such as the CGPA scale and the domain list are at the top of `js/app.js`.
+The domain list and the hard-skills list shown in the filters are at the top of `js/app.js`.

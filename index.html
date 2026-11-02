@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Students for Hire · IIM Sirmaur</title>
-<meta name="description" content="Browse the IIM Sirmaur batch by domain, CGPA and experience, and go straight to each student's LinkedIn profile.">
+<meta name="description" content="Browse the IIM Sirmaur batch by domain and hard skills, and go straight to each student's LinkedIn profile.">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +33,7 @@
   <div class="wrap">
     <span class="eyebrow">Knowledge · Leadership</span>
     <h1>Meet the IIM Sirmaur BMS batch, in one place.</h1>
-    <p class="lead">Our campus is far from the corporate hubs, so we bring the talent to you. Browse interns and future hires by domain, CGPA and skills, then jump straight to a student's LinkedIn profile.</p>
+    <p class="lead">Our campus is far from the corporate hubs, so we bring the talent to you. Browse interns and future hires by domain and hard skills, then jump straight to a student's LinkedIn profile.</p>
     <a class="btn btn-gold" href="#talent">Browse talent ↓</a>
     <a class="btn btn-ghost" href="#recruiters">How it works</a>
     <div class="stats" id="stats" aria-live="polite"></div>
@@ -41,7 +41,7 @@
 </header>
 
 <div class="sample-banner" id="sampleBanner" hidden>
-  <div class="wrap"><span><b>Profiles are being added.</b> Students are still submitting their domains, CGPA and skills. LinkedIn links appear as they come in.</span><button aria-label="Dismiss" id="sampleClose">×</button></div>
+  <div class="wrap"><span><b>Profiles are being added.</b> Students are still submitting their domains and hard skills. LinkedIn links appear as they come in.</span><button aria-label="Dismiss" id="sampleClose">×</button></div>
 </div>
 
 <main class="talent" id="talent">
@@ -57,7 +57,7 @@
 
         <div class="fgroup">
           <h4>Search</h4>
-          <input class="input" id="q" type="search" placeholder="Name, skill, club, domain…" autocomplete="off">
+          <input class="input" id="q" type="search" placeholder="Name, hard skill, club, domain…" autocomplete="off">
         </div>
 
         <div class="fgroup">
@@ -71,12 +71,7 @@
         </div>
 
         <div class="fgroup">
-          <h4>Minimum CGPA <small id="cgpaScale"></small></h4>
-          <div class="range-row"><input type="range" id="cgpa" min="0" max="4" step="0.05" value="0" aria-label="Minimum CGPA"><output id="cgpaOut" for="cgpa">Any</output></div>
-        </div>
-
-        <div class="fgroup">
-          <h4>Skills</h4>
+          <h4>Hard skills <small>pick one or more</small></h4>
           <div class="chips" id="fSkill"></div>
         </div>
 
@@ -100,7 +95,6 @@
           <select class="input" id="sort">
             <option value="complete">Complete profiles first</option>
             <option value="name">Name (A–Z)</option>
-            <option value="cgpa">CGPA (high to low)</option>
             <option value="shuffle">Random order (fair)</option>
           </select>
           <div class="viewtoggle" role="group" aria-label="Layout">
@@ -125,7 +119,7 @@
     <h2>For recruiters</h2>
     <p class="lead">Built so you can go from "who is on this campus?" to "I'd like to speak to these eight people" in a few minutes, without a campus trip.</p>
     <div class="cols3">
-      <div class="panel"><div class="ico">1</div><h3>Filter</h3><p>Narrow the batch to the domains you hire for, such as consulting, founder's office, marketing, finance, operations, supply chain or sales, then by CGPA and skills.</p></div>
+      <div class="panel"><div class="ico">1</div><h3>Filter</h3><p>Narrow the batch to the domains you hire for, such as consulting, founder's office, marketing, finance, operations, supply chain or sales, then by hard skills such as Excel, SQL, Python or financial modelling.</p></div>
       <div class="panel"><div class="ico">2</div><h3>Shortlist</h3><p>Star the profiles you like. Your shortlist stays in your browser. Export it as a CSV or copy all the LinkedIn links in one click.</p></div>
       <div class="panel"><div class="ico">3</div><h3>Connect</h3><p>Every card opens the student's live LinkedIn profile. Reach out to the Placement Committee to arrange internships and interviews, in person or virtual.</p></div>
     </div>

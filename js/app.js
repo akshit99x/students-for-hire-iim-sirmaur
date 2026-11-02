@@ -5,9 +5,13 @@
 
   // ---- configuration: edit these, not the code below ----
   const CONFIG = {
-    cgpaMax: 4.0, // top of the CGPA scale, confirm with the Placement Committee
+    cgpaMax: 4.0, // only used to label the optional CGPA badge on a card
     domains: ["Consulting", "Founder's Office", "Marketing", "General Management", "Finance", "Operations",
       "Supply Chain", "Sales", "Product Management", "Business Analytics", "HR", "Strategy", "Others"],
+    // Shown in the Hard skills filter even before anyone has them. Skills a student lists that are not here are added automatically.
+    hardSkills: ["Excel", "Advanced Excel", "SQL", "Python", "R", "Power BI", "Tableau", "Financial Modelling", "Valuation",
+      "Data Analysis", "Market Research", "Digital Marketing", "SEO", "Content Writing", "Canva", "Figma", "PowerPoint",
+      "Accounting / Tally", "Bloomberg", "Video Editing"],
   };
 
   const STUDENTS = (window.STUDENTS || []).slice();
@@ -16,11 +20,11 @@
   const initials = (n) => n.split(/\s+/).filter(Boolean).slice(0, 2).map((w) => w[0]).join('').toUpperCase();
   const domClass = (d) => 't' + (Math.max(CONFIG.domains.indexOf(d), 0) % 4);
   const safeUrl = (u) => (/^https:\/\//i.test(u || '') ? u : '');
-  const hasDetails = (s) => s.cgpa != null || s.domains.length > 0 || s.skills.length > 0;
+  const hasDetails = (s) => s.domains.length > 0 || s.hardSkills.length > 0;
   const LI = '<svg class="li-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>';
 
   // ---- state ----
-  const fresh = () => ({ q: '', domains: new Set(), mode: 'any', primaryOnly: false, cgpa: 0, skill: new Set(), loc: new Set(), onlyLinkedin: false, onlyDetails: false, sort: 'complete', view: 'grid' });
+  const fresh = () => ({ q: '', domains: new Set(), mode: 'any', primaryOnly: false, skill: new Set(), loc: new Set(), onlyLinkedin: false, onlyDetails: false, sort: 'complete', view: 'grid' });
   let S = fresh();
   let shortlist = new Set();
   const shuffleKey = new Map(STUDENTS.map((s) => [s.id, Math.random()]));
@@ -30,7 +34,7 @@
   // ---- filtering (skip = facet being counted, so counts show what a click would give) ----
   function matches(s, skip) {
     if (skip !== 'q' && S.q) {
-      const hay = [s.name, s.summary, s.internship, ...s.skills, ...s.clubs, ...s.domains].join(' ').toLowerCase();
+      const hay = [s.name, s.summary, s.internship, ...s.hardSkills, ...s.clubs, ...s.domains].join(' ').toLowerCase();
       if (!S.q.toLowerCase().split(/\s+/).every((t) => hay.includes(t))) return false;
     }
     if (skip !== 'domain' && S.domains.size) {
@@ -38,8 +42,7 @@
       const sel = [...S.domains];
       if (!(S.mode === 'all' ? sel.every((d) => pool.includes(d)) : sel.some((d) => pool.includes(d)))) return false;
     }
-    if (skip !== 'cgpa' && S.cgpa > 0 && !(s.cgpa != null && s.cgpa >= S.cgpa)) return false;
-    if (skip !== 'skill' && S.skill.size && !s.skills.some((k) => S.skill.has(k))) return false;
+    if (skip !== 'skill' && S.skill.size && !s.hardSkills.some((k) => S.skill.has(k))) return false;
     if (skip !== 'loc' && S.loc.size && !s.locations.some((l) => S.loc.has(l))) return false;
     if (S.onlyLinkedin && !safeUrl(s.linkedin)) return false;
     if (S.onlyDetails && !hasDetails(s)) return false;
@@ -47,8 +50,8 @@
   }
 
   const uniq = (fn) => [...new Set(STUDENTS.flatMap(fn).filter(Boolean))].sort();
-  const OPTIONS = { domain: CONFIG.domains, skill: uniq((s) => s.skills), loc: uniq((s) => s.locations) };
-  const valuesOf = { domain: (s) => s.domains, skill: (s) => s.skills, loc: (s) => s.locations };
+  const OPTIONS = { domain: CONFIG.domains, skill: [...new Set([...CONFIG.hardSkills, ...STUDENTS.flatMap((s) => s.hardSkills)])], loc: uniq((s) => s.locations) };
+  const valuesOf = { domain: (s) => s.domains, skill: (s) => s.hardSkills, loc: (s) => s.locations };
   const setOf = { domain: 'domains', skill: 'skill', loc: 'loc' };
 
   function renderChips(key, el) {
@@ -71,7 +74,7 @@
     const tags = s.domains.map((d, i) => `<span class="tag ${domClass(d)}${i === 0 ? ' primary' : ''}" title="${i === 0 ? 'Primary domain' : 'Also interested in'}">${esc(d)}</span>`).join('');
     const facts = [];
     if (s.internship) facts.push(['Internship', s.internship]);
-    if (s.skills.length) facts.push(['Skills', s.skills.slice(0, 3).join(', ')]);
+    if (s.hardSkills.length) facts.push(['Hard skills', s.hardSkills.slice(0, 4).join(', ')]);
     if (s.clubs.length) facts.push(['Clubs', s.clubs.slice(0, 2).join(', ')]);
     return `<article class="card${sel ? ' sel' : ''}${full ? '' : ' slim'}" data-id="${esc(s.id)}">
       <div class="card-top">
@@ -81,7 +84,7 @@
       </div>
       ${tags ? `<div class="tags">${tags}</div>` : ''}
       ${facts.length ? `<dl class="facts">${facts.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>` : ''}
-      ${full ? '' : '<p class="pending">Domains and CGPA coming soon.</p>'}
+      ${full ? '' : '<p class="pending">Domains and hard skills coming soon.</p>'}
       <div class="card-actions">
         ${url ? `<a class="btn btn-blue btn-sm" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${LI} LinkedIn</a>` : '<span class="btn btn-line btn-sm disabled" aria-disabled="true">LinkedIn pending</span>'}
         ${full ? `<button class="btn btn-line btn-sm" type="button" data-open="${esc(s.id)}">Quick view</button>` : ''}
@@ -94,7 +97,6 @@
   const SORTS = {
     complete: (a, b) => score(b) - score(a) || a.name.localeCompare(b.name),
     name: (a, b) => a.name.localeCompare(b.name),
-    cgpa: (a, b) => (b.cgpa ?? -1) - (a.cgpa ?? -1) || a.name.localeCompare(b.name),
     shuffle: (a, b) => shuffleKey.get(a.id) - shuffleKey.get(b.id),
   };
 
@@ -102,10 +104,9 @@
     const rows = STUDENTS.filter((s) => matches(s)).sort(SORTS[S.sort]);
     $('#grid').className = 'grid' + (S.view === 'list' ? ' list' : '');
     $('#grid').innerHTML = rows.length ? rows.map(card).join('') :
-      '<div class="empty" style="grid-column:1/-1"><h3>No students match these filters</h3><p>Try lowering the CGPA or removing a filter. <button class="btn btn-blue btn-sm" type="button" id="emptyReset">Reset filters</button></p></div>';
+      '<div class="empty" style="grid-column:1/-1"><h3>No students match these filters</h3><p>Try removing a filter. <button class="btn btn-blue btn-sm" type="button" id="emptyReset">Reset filters</button></p></div>';
     $('#count').innerHTML = `${rows.length} <span>of ${STUDENTS.length} students</span>`;
     renderChips('domain', $('#fDomain')); renderChips('skill', $('#fSkill')); renderChips('loc', $('#fLoc'));
-    $('#cgpaOut').textContent = S.cgpa ? S.cgpa.toFixed(2) + '+' : 'Any';
     renderActive(); renderShortbar(); syncUrl();
   }
 
@@ -113,7 +114,6 @@
     const items = [];
     if (S.q) items.push(['q', '', `“${S.q}”`]);
     S.domains.forEach((d) => items.push(['domains', d, d]));
-    if (S.cgpa) items.push(['cgpa', '', `CGPA ≥ ${S.cgpa.toFixed(2)}`]);
     S.skill.forEach((v) => items.push(['skill', v, v]));
     S.loc.forEach((v) => items.push(['loc', v, v]));
     if (S.onlyLinkedin) items.push(['onlyLinkedin', '', 'LinkedIn available']);
@@ -133,7 +133,6 @@
     if (S.domains.size) p.set('domain', [...S.domains].join('|'));
     if (S.mode === 'all') p.set('mode', 'all');
     if (S.primaryOnly) p.set('primary', '1');
-    if (S.cgpa) p.set('cgpa', S.cgpa);
     ['skill', 'loc'].forEach((k) => S[k].size && p.set(k, [...S[k]].join('|')));
     if (S.onlyLinkedin) p.set('li', '1');
     if (S.onlyDetails) p.set('details', '1');
@@ -148,14 +147,13 @@
     const set = (k) => new Set((p.get(k) || '').split('|').filter(Boolean));
     S.q = p.get('q') || '';
     S.domains = set('domain'); S.mode = p.get('mode') === 'all' ? 'all' : 'any'; S.primaryOnly = p.get('primary') === '1';
-    S.cgpa = Math.min(CONFIG.cgpaMax, Math.max(0, parseFloat(p.get('cgpa')) || 0));
     S.skill = set('skill'); S.loc = set('loc');
     S.onlyLinkedin = p.get('li') === '1'; S.onlyDetails = p.get('details') === '1';
     S.sort = SORTS[p.get('sort')] ? p.get('sort') : 'complete';
     S.view = p.get('view') === 'list' ? 'list' : 'grid';
   }
   function syncControls() {
-    $('#q').value = S.q; $('#cgpa').value = S.cgpa; $('#primaryOnly').checked = S.primaryOnly; $('#sort').value = S.sort;
+    $('#q').value = S.q; $('#primaryOnly').checked = S.primaryOnly; $('#sort').value = S.sort;
     $('#onlyLinkedin').checked = S.onlyLinkedin; $('#onlyDetails').checked = S.onlyDetails;
     document.querySelectorAll('[data-mode]').forEach((b) => b.setAttribute('aria-pressed', b.dataset.mode === S.mode));
     $('#vGrid').setAttribute('aria-pressed', S.view === 'grid'); $('#vList').setAttribute('aria-pressed', S.view === 'list');
@@ -189,7 +187,7 @@
           ${block('Internship', s.internship ? `<p style="margin:0">${esc(s.internship)}</p>` : '')}
           ${block('Preferred locations', s.locations.length ? `<p style="margin:0">${esc(s.locations.join(', '))}</p>` : '')}
         </div>
-        ${block('Skills', tagList(s.skills, 't3'))}
+        ${block('Hard skills', tagList(s.hardSkills, 't3'))}
         ${block('Clubs and committees', tagList(s.clubs, 't0'))}
         <div class="m-actions">
           ${url ? `<a class="btn btn-blue" href="${esc(url)}" target="_blank" rel="noopener noreferrer">${LI} Open LinkedIn profile</a>` : '<span class="btn btn-line disabled" aria-disabled="true">LinkedIn pending</span>'}
@@ -208,8 +206,8 @@
   const shortRows = () => STUDENTS.filter((s) => shortlist.has(s.id));
   function exportCsv() {
     const q = (v) => `"${String(v ?? '').replace(/"/g, '""')}"`;
-    const head = ['Name', 'CGPA', 'Primary domain', 'Other domains', 'Skills', 'LinkedIn'];
-    const lines = [head.map(q).join(',')].concat(shortRows().map((s) => [s.name, s.cgpa ?? '', s.domains[0] || '', s.domains.slice(1).join('; '), s.skills.join('; '), s.linkedin || ''].map(q).join(',')));
+    const head = ['Name', 'Primary domain', 'Other domains', 'Hard skills', 'LinkedIn'];
+    const lines = [head.map(q).join(',')].concat(shortRows().map((s) => [s.name, s.domains[0] || '', s.domains.slice(1).join('; '), s.hardSkills.join('; '), s.linkedin || ''].map(q).join(',')));
     const a = document.createElement('a');
     a.href = URL.createObjectURL(new Blob(['﻿' + lines.join('\n')], { type: 'text/csv;charset=utf-8' }));
     a.download = 'iim-sirmaur-shortlist.csv'; document.body.appendChild(a); a.click(); a.remove();
@@ -220,9 +218,7 @@
   function renderStats() {
     const n = STUDENTS.length;
     const li = STUDENTS.filter((s) => safeUrl(s.linkedin)).length;
-    const cg = STUDENTS.filter((s) => s.cgpa != null);
     const stats = [[n, 'Students'], [li, 'LinkedIn profiles live']];
-    if (cg.length) stats.push([(cg.reduce((a, s) => a + s.cgpa, 0) / cg.length).toFixed(2), 'Average CGPA']);
     stats.push([CONFIG.domains.length - 1, 'Domains to filter by']);
     $('#stats').innerHTML = stats.map(([b, l]) => `<div class="stat"><b>${b}</b><span>${l}</span></div>`).join('');
   }
@@ -230,9 +226,6 @@
   // ---- events ----
   function bind() {
     $('#q').addEventListener('input', (e) => { S.q = e.target.value.trim(); render(); });
-    $('#cgpa').max = CONFIG.cgpaMax;
-    $('#cgpaScale').textContent = `out of ${CONFIG.cgpaMax}`;
-    $('#cgpa').addEventListener('input', (e) => { S.cgpa = parseFloat(e.target.value); render(); });
     $('#primaryOnly').addEventListener('change', (e) => { S.primaryOnly = e.target.checked; render(); });
     $('#onlyLinkedin').addEventListener('change', (e) => { S.onlyLinkedin = e.target.checked; render(); });
     $('#onlyDetails').addEventListener('change', (e) => { S.onlyDetails = e.target.checked; render(); });
@@ -253,7 +246,7 @@
       } else if (t.dataset.mode) { S.mode = t.dataset.mode; syncControls(); render(); }
       else if (t.dataset.rm) {
         const k = t.dataset.rm;
-        if (k === 'q') S.q = ''; else if (k === 'cgpa') S.cgpa = 0; else if (k === 'onlyLinkedin' || k === 'onlyDetails') S[k] = false; else S[k].delete(t.dataset.v);
+        if (k === 'q') S.q = ''; else if (k === 'onlyLinkedin' || k === 'onlyDetails') S[k] = false; else S[k].delete(t.dataset.v);
         syncControls(); render();
       }
       else if (t.dataset.open) openModal(t.dataset.open);
