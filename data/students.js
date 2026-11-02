@@ -493,7 +493,7 @@ window.STUDENTS = [
   "locations": [],
   "summary": "",
   "linkedin": "https://www.linkedin.com/in/vaishnavi-challapalli-ab3ba9334/",
-  "photo": "",
+  "photo": "assets/photos/challapalli-hari-naga-vaishnavi.jpg",
   "sample": false
  },
  {
@@ -653,7 +653,7 @@ window.STUDENTS = [
   "locations": [],
   "summary": "",
   "linkedin": "https://www.linkedin.com/in/garvit-madan-59a847355/",
-  "photo": "",
+  "photo": "assets/photos/garvit-madan.jpg",
   "sample": false
  },
  {
@@ -957,7 +957,7 @@ window.STUDENTS = [
   "locations": [],
   "summary": "",
   "linkedin": "https://www.linkedin.com/in/harshada-karanam/",
-  "photo": "",
+  "photo": "assets/photos/karanam-satya-harshada.jpg",
   "sample": false
  },
  {
@@ -989,7 +989,7 @@ window.STUDENTS = [
   "locations": [],
   "summary": "",
   "linkedin": "https://www.linkedin.com/in/keerthi-narayan-4a8375411/",
-  "photo": "",
+  "photo": "assets/photos/katari-keerthi-narayan.jpg",
   "sample": false
  },
  {
@@ -1239,7 +1239,7 @@ window.STUDENTS = [
   "locations": [],
   "summary": "",
   "linkedin": "https://www.linkedin.com/in/mehar-arora-b31721232/",
-  "photo": "",
+  "photo": "assets/photos/mehar-ravi-arora.jpg",
   "sample": false
  },
  {
@@ -1313,7 +1313,7 @@ window.STUDENTS = [
   "locations": [],
   "summary": "",
   "linkedin": "https://www.linkedin.com/in/nikhileshwar-kumar-930aa53aa/",
-  "photo": "",
+  "photo": "assets/photos/nikhileshwar-kumar.jpg",
   "sample": false
  },
  {
@@ -1345,7 +1345,7 @@ window.STUDENTS = [
   "locations": [],
   "summary": "",
   "linkedin": "https://www.linkedin.com/in/surya-prakash-nukala-93b747269/",
-  "photo": "",
+  "photo": "assets/photos/nukala-surya-prakash.jpg",
   "sample": false
  },
  {
@@ -1469,7 +1469,7 @@ window.STUDENTS = [
   "locations": [],
   "summary": "",
   "linkedin": "https://www.linkedin.com/in/prateek-30b420383/",
-  "photo": "",
+  "photo": "assets/photos/prateek.jpg",
   "sample": false
  },
  {
@@ -1517,7 +1517,7 @@ window.STUDENTS = [
   "locations": [],
   "summary": "",
   "linkedin": "https://www.linkedin.com/in/priyanshi-bishnoi-721ba6385/",
-  "photo": "",
+  "photo": "assets/photos/priyanshi-bishnoi.jpg",
   "sample": false
  },
  {
@@ -1688,7 +1688,7 @@ window.STUDENTS = [
   "locations": [],
   "summary": "",
   "linkedin": "https://www.linkedin.com/in/saksham-aggarwal-9994a9358/",
-  "photo": "",
+  "photo": "assets/photos/saksham-aggarwal.jpg",
   "sample": false
  },
  {
@@ -1858,7 +1858,7 @@ window.STUDENTS = [
   "locations": [],
   "summary": "",
   "linkedin": "https://www.linkedin.com/in/siddhant-aggarwal-370a673b8/",
-  "photo": "",
+  "photo": "assets/photos/siddhant-aggarwal.jpg",
   "sample": false
  },
  {
@@ -1906,7 +1906,7 @@ window.STUDENTS = [
   "locations": [],
   "summary": "",
   "linkedin": "https://www.linkedin.com/in/utpal-chandra-92b6403ab/",
-  "photo": "",
+  "photo": "assets/photos/utpal-chandra.jpg",
   "sample": false
  },
  {
