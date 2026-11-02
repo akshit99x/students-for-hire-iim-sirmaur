@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 118">
+  <path d="M50 3 L93 17 V62 C93 88 73 103 50 115 C27 103 7 88 7 62 V17 Z" fill="#0F60A2"/>
+  <path d="M50 10 L87 22 V62 C87 84 70 97 50 108 C30 97 13 84 13 62 V22 Z" fill="none" stroke="#fff" stroke-width="1.6" opacity=".85"/>
+  <g stroke="#fff" stroke-width="2" stroke-linecap="round" opacity=".9">
+    <line x1="50" y1="28" x2="50" y2="19"/>
+    <line x1="50" y1="28" x2="50" y2="19" transform="rotate(-25 50 42)"/>
+    <line x1="50" y1="28" x2="50" y2="19" transform="rotate(25 50 42)"/>
+    <line x1="50" y1="28" x2="50" y2="19" transform="rotate(-50 50 42)"/>
+    <line x1="50" y1="28" x2="50" y2="19" transform="rotate(50 50 42)"/>
+    <line x1="50" y1="28" x2="50" y2="19" transform="rotate(-75 50 42)"/>
+    <line x1="50" y1="28" x2="50" y2="19" transform="rotate(75 50 42)"/>
+  </g>
+  <circle cx="50" cy="42" r="9" fill="#FDC20C"/>
+  <path d="M50 84 C42 74 28 72 18 74 V52 C28 50 42 52 50 62 Z" fill="#fff"/>
+  <path d="M50 84 C58 74 72 72 82 74 V52 C72 50 58 52 50 62 Z" fill="#fff" opacity=".92"/>
+  <path d="M50 62 V84" stroke="#0F60A2" stroke-width="1.6"/>
+  <path d="M25 58 C33 57 42 59 47 65 M25 64 C33 63 40 65 45 70" stroke="#0F60A2" stroke-width="1" fill="none" opacity=".6"/>
+  <path d="M75 58 C67 57 58 59 53 65 M75 64 C67 63 60 65 55 70" stroke="#0F60A2" stroke-width="1" fill="none" opacity=".6"/>
+</svg>

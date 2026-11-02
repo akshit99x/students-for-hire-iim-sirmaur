@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Students for Hire · IIM Sirmaur</title>
+<meta name="description" content="Browse the IIM Sirmaur batch by domain, CGPA and experience, and go straight to each student's LinkedIn profile.">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="brand-bar">
+  <div class="wrap">
+    <a class="brand" href="index.html">
+      <img src="assets/favicon.svg" alt="IIM Sirmaur" width="64" height="76">
+      <span class="inst">INDIAN INSTITUTE OF MANAGEMENT SIRMAUR<span class="sub">Students for Hire · Placement Portal</span></span>
+    </a>
+  </div>
+</div>
+<nav class="nav-bar" aria-label="Main">
+  <div class="wrap"><ul>
+    <li><a href="#talent" aria-current="page">Talent Pool</a></li>
+    <li><a href="#recruiters">For Recruiters</a></li>
+    <li><a href="students.html">For Students</a></li>
+  </ul></div>
+</nav>
+
+<header class="hero" style="background-image:url(assets/campus-night.jpg)">
+  <div class="wrap">
+    <span class="eyebrow">Knowledge · Leadership</span>
+    <h1>Meet the IIM Sirmaur BMS batch, in one place.</h1>
+    <p class="lead">Our campus is far from the corporate hubs, so we bring the talent to you. Browse interns and future hires by domain, CGPA and skills, then jump straight to a student's LinkedIn profile.</p>
+    <a class="btn btn-gold" href="#talent">Browse talent ↓</a>
+    <a class="btn btn-ghost" href="#recruiters">How it works</a>
+    <div class="stats" id="stats" aria-live="polite"></div>
+  </div>
+</header>
+
+<div class="sample-banner" id="sampleBanner" hidden>
+  <div class="wrap"><span><b>Profiles are being added.</b> Students are still submitting their domains, CGPA and skills. LinkedIn links appear as they come in.</span><button aria-label="Dismiss" id="sampleClose">×</button></div>
+</div>
+
+<main class="talent" id="talent">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>Talent pool</h2>
+      <p>Combine filters to build a shortlist. Every card links to the student's own LinkedIn profile. Share your filtered view with colleagues using <em>Copy link to this view</em>.</p>
+    </div>
+
+    <div class="layout">
+      <aside class="filters" id="filters" aria-label="Filters">
+        <header><h3>Filters</h3><button type="button" id="resetBtn">Reset all</button></header>
+
+        <div class="fgroup">
+          <h4>Search</h4>
+          <input class="input" id="q" type="search" placeholder="Name, skill, club, domain…" autocomplete="off">
+        </div>
+
+        <div class="fgroup">
+          <h4>Domain <small>pick one or more</small></h4>
+          <div class="chips" id="fDomain"></div>
+          <div class="seg" style="margin-top:12px" role="group" aria-label="Domain match mode">
+            <button type="button" data-mode="any" aria-pressed="true">Any selected</button>
+            <button type="button" data-mode="all" aria-pressed="false">All selected</button>
+          </div>
+          <label class="check"><input type="checkbox" id="primaryOnly"> Primary domain only</label>
+        </div>
+
+        <div class="fgroup">
+          <h4>Minimum CGPA <small id="cgpaScale"></small></h4>
+          <div class="range-row"><input type="range" id="cgpa" min="0" max="4" step="0.05" value="0" aria-label="Minimum CGPA"><output id="cgpaOut" for="cgpa">Any</output></div>
+        </div>
+
+        <div class="fgroup">
+          <h4>Skills</h4>
+          <div class="chips" id="fSkill"></div>
+        </div>
+
+        <div class="fgroup">
+          <h4>Profile</h4>
+          <label class="check" style="margin-top:0"><input type="checkbox" id="onlyLinkedin"> LinkedIn available</label>
+          <label class="check"><input type="checkbox" id="onlyDetails"> Details filled in</label>
+        </div>
+
+        <div class="fgroup">
+          <h4>Preferred location</h4>
+          <div class="chips" id="fLoc"></div>
+        </div>
+      </aside>
+
+      <section aria-label="Results">
+        <div class="toolbar">
+          <button class="btn btn-blue btn-sm filter-open" id="openFilters" type="button">☰ Filters</button>
+          <div class="count" id="count" aria-live="polite"></div>
+          <label class="sr" for="sort">Sort by</label>
+          <select class="input" id="sort">
+            <option value="complete">Complete profiles first</option>
+            <option value="name">Name (A–Z)</option>
+            <option value="cgpa">CGPA (high to low)</option>
+            <option value="shuffle">Random order (fair)</option>
+          </select>
+          <div class="viewtoggle" role="group" aria-label="Layout">
+            <button type="button" id="vGrid" aria-pressed="true" title="Grid view" aria-label="Grid view">▦</button>
+            <button type="button" id="vList" aria-pressed="false" title="List view" aria-label="List view">☰</button>
+          </div>
+          <button class="btn btn-line btn-sm" id="copyView" type="button">Copy link to this view</button>
+        </div>
+        <div class="active-chips" id="active"></div>
+        <div class="grid" id="grid"></div>
+      </section>
+    </div>
+  </div>
+</main>
+
+<section class="photo-strip" style="background-image:url(assets/campus-hostels.jpg)" aria-label="IIM Sirmaur campus">
+  <blockquote>Distance from the city should never be distance from the opportunity.</blockquote>
+</section>
+
+<section class="band white" id="recruiters">
+  <div class="wrap">
+    <h2>For recruiters</h2>
+    <p class="lead">Built so you can go from "who is on this campus?" to "I'd like to speak to these eight people" in a few minutes, without a campus trip.</p>
+    <div class="cols3">
+      <div class="panel"><div class="ico">1</div><h3>Filter</h3><p>Narrow the batch to the domains you hire for, such as consulting, founder's office, marketing, finance, operations, supply chain or sales, then by CGPA and skills.</p></div>
+      <div class="panel"><div class="ico">2</div><h3>Shortlist</h3><p>Star the profiles you like. Your shortlist stays in your browser. Export it as a CSV or copy all the LinkedIn links in one click.</p></div>
+      <div class="panel"><div class="ico">3</div><h3>Connect</h3><p>Every card opens the student's live LinkedIn profile. Reach out to the Placement Committee to arrange internships and interviews, in person or virtual.</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site">
+  <div class="wrap">
+    <div><h4>Placement Committee</h4><p>IIM Sirmaur · Rajban, Paonta Sahib<br>Sirmaur, Himachal Pradesh<br><a href="mailto:placements@iimsirmaur.ac.in">placements@iimsirmaur.ac.in</a><br><small>(placeholder, confirm the real address)</small></p></div>
+    <div><h4>Explore</h4><p><a href="students.html">For students</a></p></div>
+    <p class="legal">Student-run initiative. Profile data is shared with each student's consent.</p>
+  </div>
+</footer>
+
+<div class="shortbar" id="shortbar" role="region" aria-label="Shortlist">
+  <span><b id="shortN">0</b> shortlisted</span>
+  <button class="btn btn-gold" id="exportCsv" type="button">Export CSV</button>
+  <button class="btn btn-ghost" id="copyLinks" type="button">Copy LinkedIn links</button>
+  <button class="link" id="clearShort" type="button">Clear</button>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<div class="scrim" id="scrim"></div>
+
+<dialog id="modal" aria-labelledby="mName"></dialog>
+
+<script src="data/students.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

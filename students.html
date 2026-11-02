@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>For Students · Students for Hire · IIM Sirmaur</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<div class="brand-bar"><div class="wrap">
+  <a class="brand" href="index.html"><img src="assets/favicon.svg" alt="IIM Sirmaur" width="64" height="76">
+  <span class="inst">INDIAN INSTITUTE OF MANAGEMENT SIRMAUR<span class="sub">Students for Hire · Placement Portal</span></span></a>
+</div></div>
+<nav class="nav-bar" aria-label="Main"><div class="wrap"><ul>
+  <li><a href="index.html">Talent Pool</a></li>
+  <li><a href="index.html#recruiters">For Recruiters</a></li>
+  <li><a href="students.html" aria-current="page">For Students</a></li>
+</ul></div></nav>
+
+<header class="page-hero"><div class="wrap">
+  <h1>Be easy to find.</h1>
+  <p>Recruiters see this portal first. Make sure your profile is complete, and make sure the people who find you on LinkedIn can find this page too.</p>
+</div></header>
+
+<section class="band">
+  <div class="wrap">
+    <h2>Three steps</h2>
+    <p class="lead">Takes about ten minutes. Do it before the Placement Committee sends the portal link to companies.</p>
+    <ol class="steps">
+      <li><b>Submit your details.</b> Fill in the profile form from the Placement Committee: CGPA, domains (a primary one plus up to two more), three to five skills, clubs and committees, any internship, preferred locations and your LinkedIn URL.<br><small>Form link: <em>to be added by the committee</em></small></li>
+      <li><b>Polish your LinkedIn.</b> The portal sends recruiters straight to it. Use a clear photo, a headline that names your target domain, and an About section with two or three lines on what you want to do and what you have done.</li>
+      <li><b>Pin the portal on LinkedIn.</b> On your profile choose <em>Add profile section → Featured → Add a link</em> and paste the portal address. Then share the post below so alumni and recruiters in your network see it.</li>
+    </ol>
+  </div>
+</section>
+
+<section class="band white">
+  <div class="wrap">
+    <h2>Ready-to-post LinkedIn text</h2>
+    <p class="lead">Edit the highlighted parts so it sounds like you, then post it.</p>
+    <div class="copybox" id="post">Proud to share that the IIM Sirmaur BMS batch now has its own talent portal.
+
+Based in the foothills of Himachal, we know it's hard to see all of us in one place. So we built one: filter by domain (consulting, founder's office, marketing, finance, operations, supply chain, sales and more), by CGPA and by skills, and go straight to our LinkedIn profiles.
+
+I'm looking for roles in [YOUR DOMAIN]. You can find me here: [PORTAL LINK]
+
+#IIMSirmaur #BMS #Internships #StudentsForHire<button class="btn btn-gold btn-sm" id="copyPost" type="button">Copy</button></div>
+    <p style="margin-top:14px;color:var(--muted)">Replace [PORTAL LINK] once the site is live.</p>
+  </div>
+</section>
+
+<section class="band">
+  <div class="wrap">
+    <h2>What recruiters can filter on</h2>
+    <p class="lead">Your answers decide which searches you appear in, so be honest and specific.</p>
+    <div class="pills">
+      <span class="pill">Consulting</span><span class="pill">Founder's Office</span><span class="pill">Marketing</span><span class="pill">General Management</span><span class="pill">Finance</span><span class="pill">Operations</span><span class="pill">Supply Chain</span><span class="pill">Sales</span><span class="pill">Product Management</span><span class="pill">Business Analytics</span><span class="pill">HR</span><span class="pill">Strategy</span>
+      <span class="pill">CGPA</span><span class="pill">Skills</span><span class="pill">Clubs</span><span class="pill">Preferred location</span>
+    </div>
+    <div class="note">Your profile is shown only with your consent. Ask the Placement Committee to update or remove it at any time.</div>
+  </div>
+</section>
+
+<footer class="site"><div class="wrap">
+  <div><h4>Placement Committee</h4><p>IIM Sirmaur · Rajban, Paonta Sahib<br>Sirmaur, Himachal Pradesh</p></div>
+  <div><h4>Explore</h4><p><a href="index.html">Talent pool</a></p></div>
+  <p class="legal">Student-run initiative. Profile data is shared with each student's consent.</p>
+</div></footer>
+<div class="toast" id="toast" role="status"></div>
+<script>
+document.getElementById('copyPost').addEventListener('click', async function () {
+  var box = document.getElementById('post'), btn = this, text = box.firstChild.textContent.trim();
+  try { await navigator.clipboard.writeText(text); } catch (e) {
+    var ta = document.createElement('textarea'); ta.value = text; document.body.appendChild(ta); ta.select(); try { document.execCommand('copy'); } catch (_) {} ta.remove();
+  }
+  var t = document.getElementById('toast'); t.textContent = 'Post copied'; t.classList.add('show');
+  setTimeout(function () { t.classList.remove('show'); }, 2000);
+});
+</script>
+</body>
+</html>
