@@ -24,7 +24,7 @@ While students have not submitted their details, run the converter with `--sampl
 python3 scripts/csv_to_data.py data/students.csv --sample
 ```
 
-Every student with no domains or hard skills gets a repeatable random set, flagged `"sample": true`, and the site labels those cards **Sample**. Students who have real details are never overwritten. Run without `--sample` to publish real data only; the preview banner disappears once nobody is flagged.
+Only the students listed in `data/sample_ids.txt` (currently the first five) get a repeatable random set, flagged `"sample": true`, and the site labels those cards **Sample**. Everyone else stays empty ("coming soon") until they submit details, and students with real details are never overwritten. Run without `--sample` to publish real data only; the preview banner disappears once nobody is flagged.
 
 ## Publish on GitHub Pages
 

@@ -2,7 +2,7 @@
 """Convert data/students.csv into data/students.js (the file the website reads).
 
 Usage:  python3 scripts/csv_to_data.py data/students.csv            real data only
-        python3 scripts/csv_to_data.py data/students.csv --sample   also fill empty profiles with placeholders
+        python3 scripts/csv_to_data.py data/students.csv --sample   also add placeholders for ids in data/sample_ids.txt
 
 Columns (header row required; list columns are separated by ';'):
   name, cgpa, domains, hard_skills, clubs, internship, locations, summary, linkedin, photo
@@ -11,9 +11,10 @@ Only name is required (cgpa is optional and only displayed, never filtered). Lea
 `domains` is ordered: the first one is the student's primary domain.
 LinkedIn tracking parameters (?utm_...) are stripped automatically.
 
---sample gives every student who has NOT submitted domains/hard skills a random (but repeatable) set of
+--sample gives the students listed in data/sample_ids.txt (one id per line) a random (but repeatable) set of
 placeholder domains, hard skills and locations, flagged "sample": true so the site labels them "Sample".
-Students who have filled in their own details are never touched. Drop the flag once real data arrives.
+Anyone who has filled in their own details is never touched; everyone else stays empty until they submit.
+Drop the flag once real data arrives.
 """
 import csv, json, random, re, sys, pathlib
 from urllib.parse import urlsplit, urlunsplit
@@ -65,6 +66,9 @@ def sample_profile(key):
     return doms, skills, r.sample(LOCATIONS, r.choice([1, 2, 2]))
 
 def main(src, sample=False):
+    ids = set()
+    if sample:
+        ids = {l.strip() for l in (pathlib.Path(src).with_name("sample_ids.txt")).read_text().splitlines() if l.strip()}
     rows = []
     with open(src, newline="", encoding="utf-8-sig") as f:
         for r in csv.DictReader(f):
@@ -74,7 +78,7 @@ def main(src, sample=False):
             cg = (r.get("cgpa") or "").strip()
             sid = slug(name)
             doms, skills, locs = lst(r.get("domains")), lst(r.get("hard_skills")), lst(r.get("locations"))
-            is_sample = sample and not doms and not skills
+            is_sample = sid in ids and not doms and not skills
             if is_sample:
                 doms, skills, locs = sample_profile(sid)
             rows.append({

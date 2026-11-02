@@ -6,25 +6,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Investment Banking",
-   "Sales"
-  ],
-  "hardSkills": [
-   "Valuation",
-   "Market Research",
-   "Advanced Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Hyderabad",
-   "Delhi NCR"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "aarav-mittal",
@@ -32,25 +22,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Finance",
-   "Others",
-   "HR"
-  ],
-  "hardSkills": [
-   "Budgeting & Forecasting",
-   "Performance Management"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Mumbai",
-   "Pune"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "aayush-raj",
@@ -58,26 +38,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Finance",
-   "General Management"
-  ],
-  "hardSkills": [
-   "Accounting / Tally",
-   "Financial Modelling",
-   "Financial Statement Analysis",
-   "Equity Research"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Bengaluru",
-   "Kolkata"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "abhinand-raj-makkoth-jayaraj",
@@ -85,26 +54,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Consulting",
-   "HR"
-  ],
-  "hardSkills": [
-   "Market Research",
-   "Compensation & Benefits",
-   "Strategy Frameworks",
-   "Performance Management"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Chennai",
-   "Delhi NCR"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "adarsh-c-s",
@@ -112,26 +70,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "General Management",
-   "HR"
-  ],
-  "hardSkills": [
-   "Budgeting & Forecasting",
-   "Employee Engagement",
-   "Project Management",
-   "Compensation & Benefits"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Delhi NCR",
-   "Mumbai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "aditi-joshi",
@@ -139,24 +86,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Marketing",
-   "Finance",
-   "Operations"
-  ],
-  "hardSkills": [
-   "SEO",
-   "Canva"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Remote"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "aditya-joshi",
@@ -164,26 +102,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Consulting",
-   "Others",
-   "Supply Chain"
-  ],
-  "hardSkills": [
-   "Market Research",
-   "Graphic Design",
-   "SAP"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Bengaluru",
-   "Remote"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "adya-jain",
@@ -191,25 +118,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Product Management",
-   "General Management"
-  ],
-  "hardSkills": [
-   "SQL",
-   "Google Analytics",
-   "Figma"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Kolkata",
-   "Remote"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "aishwarya-kohli",
@@ -217,26 +134,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Others",
-   "Finance"
-  ],
-  "hardSkills": [
-   "Photography",
-   "Financial Modelling",
-   "Equity Research",
-   "Budgeting & Forecasting",
-   "PowerPoint"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Hyderabad"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "akansha",
@@ -244,26 +150,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Others",
-   "General Management"
-  ],
-  "hardSkills": [
-   "Process Improvement",
-   "Strategy Frameworks",
-   "Google Sheets",
-   "Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Delhi NCR",
-   "Remote"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "akriti-agarwal",
@@ -271,26 +166,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Others",
-   "Sales"
-  ],
-  "hardSkills": [
-   "Lead Generation",
-   "Graphic Design",
-   "Market Research",
-   "Presentation Design"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Delhi NCR",
-   "Mumbai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "angeline-jerry-a",
@@ -298,26 +182,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Entrepreneurship",
-   "Founder's Office"
-  ],
-  "hardSkills": [
-   "Strategy Frameworks",
-   "Notion",
-   "Project Management",
-   "Budgeting & Forecasting",
-   "PowerPoint"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Chennai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "anish-bandaru",
@@ -325,27 +198,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "General Management",
-   "Strategy"
-  ],
-  "hardSkills": [
-   "Financial Modelling",
-   "Notion",
-   "Budgeting & Forecasting",
-   "Market Research",
-   "Presentation Design"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Delhi NCR",
-   "Kolkata"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "anittya-rahul-lele",
@@ -353,25 +214,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "General Management",
-   "Supply Chain",
-   "Founder's Office"
-  ],
-  "hardSkills": [
-   "SAP",
-   "Strategy Frameworks",
-   "PowerPoint"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Bengaluru"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "anshika-gupta",
@@ -379,26 +230,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Founder's Office",
-   "HR"
-  ],
-  "hardSkills": [
-   "Market Research",
-   "Strategy Frameworks",
-   "Data Analysis",
-   "Canva"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Bengaluru",
-   "Delhi NCR"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "anveeksha-tripathi",
@@ -406,25 +246,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Supply Chain"
-  ],
-  "hardSkills": [
-   "Logistics",
-   "Advanced Excel",
-   "Supply Chain Planning",
-   "PowerPoint"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Kolkata",
-   "Hyderabad"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "arjun-k",
@@ -432,24 +262,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Founder's Office"
-  ],
-  "hardSkills": [
-   "Market Research",
-   "Notion",
-   "Strategy Frameworks"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Delhi NCR",
-   "Mumbai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "arya-paliwal",
@@ -457,26 +278,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Finance",
-   "Marketing"
-  ],
-  "hardSkills": [
-   "Digital Marketing",
-   "Valuation",
-   "Equity Research",
-   "Canva"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Bengaluru",
-   "Remote"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "aryan-jha",
@@ -484,25 +294,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Consulting",
-   "Entrepreneurship",
-   "Marketing"
-  ],
-  "hardSkills": [
-   "Advanced Excel",
-   "Financial Modelling",
-   "Data Analysis"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Bengaluru"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "aseem-rathore",
@@ -510,23 +310,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Product Management"
-  ],
-  "hardSkills": [
-   "Jira",
-   "Google Analytics",
-   "Advanced Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Remote"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "ashish-ranjan",
@@ -534,24 +326,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Investment Banking",
-   "Finance"
-  ],
-  "hardSkills": [
-   "Capital IQ",
-   "Budgeting & Forecasting"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Mumbai",
-   "Chennai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "ashmi-nagar",
@@ -559,24 +342,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Entrepreneurship"
-  ],
-  "hardSkills": [
-   "Figma",
-   "Notion",
-   "Canva",
-   "Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Kolkata"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "atharv-bafna",
@@ -584,25 +358,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Business Analytics",
-   "General Management"
-  ],
-  "hardSkills": [
-   "Notion",
-   "Python",
-   "PowerPoint"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Kolkata",
-   "Bengaluru"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "auti-om-abhay",
@@ -610,27 +374,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Others",
-   "Investment Banking"
-  ],
-  "hardSkills": [
-   "Bloomberg",
-   "Capital IQ",
-   "Investment Analysis",
-   "Photography",
-   "Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Chennai",
-   "Kolkata"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "ayushi-lohani",
@@ -638,23 +390,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Business Analytics"
-  ],
-  "hardSkills": [
-   "Statistics",
-   "Power BI",
-   "Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Pune"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "bhardhwaj-hariharan",
@@ -662,26 +406,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Founder's Office",
-   "Marketing",
-   "Sales"
-  ],
-  "hardSkills": [
-   "Budgeting & Forecasting",
-   "Email Marketing",
-   "Copywriting"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Hyderabad",
-   "Bengaluru"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "bheesetti-venkata-karthikeya",
@@ -689,26 +422,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Business Analytics",
-   "Consulting"
-  ],
-  "hardSkills": [
-   "Financial Modelling",
-   "Tableau",
-   "Data Analysis",
-   "Canva"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Bengaluru",
-   "Mumbai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "bonisha-makwana",
@@ -716,27 +438,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Others",
-   "HR"
-  ],
-  "hardSkills": [
-   "Learning & Development",
-   "Photoshop",
-   "HR Analytics",
-   "Premiere Pro",
-   "Data Analysis"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Bengaluru",
-   "Kolkata"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "caitlin-shivram",
@@ -744,26 +454,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Operations",
-   "Founder's Office"
-  ],
-  "hardSkills": [
-   "Market Research",
-   "Advanced Excel",
-   "Notion",
-   "Process Improvement",
-   "Presentation Design"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Pune"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "chaitanya-mehta",
@@ -771,25 +470,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Investment Banking",
-   "Business Analytics"
-  ],
-  "hardSkills": [
-   "Tableau",
-   "Data Visualisation",
-   "Investment Analysis",
-   "PowerPoint"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Kolkata"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "challapalli-hari-naga-vaishnavi",
@@ -797,24 +486,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Consulting",
-   "Founder's Office"
-  ],
-  "hardSkills": [
-   "Budgeting & Forecasting",
-   "PowerPoint"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Chennai",
-   "Mumbai"
-  ],
+  "locations": [],
   "summary": "",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/vaishnavi-challapalli-ab3ba9334/",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "debashish-medhi",
@@ -822,24 +502,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Marketing",
-   "HR"
-  ],
-  "hardSkills": [
-   "Social Media Marketing",
-   "Learning & Development",
-   "Presentation Design"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Kolkata"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "devakar-singh-gurjar",
@@ -847,25 +518,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Consulting"
-  ],
-  "hardSkills": [
-   "Data Analysis",
-   "Market Research",
-   "PowerPoint",
-   "Presentation Design"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Mumbai",
-   "Delhi NCR"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "dheeraj-chouhan",
@@ -873,25 +534,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Product Management",
-   "Investment Banking"
-  ],
-  "hardSkills": [
-   "SQL",
-   "Bloomberg",
-   "Figma"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Mumbai",
-   "Remote"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "diksha-ram-suryawanshi",
@@ -899,27 +550,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Investment Banking",
-   "Entrepreneurship"
-  ],
-  "hardSkills": [
-   "Advanced Excel",
-   "Capital IQ",
-   "Valuation",
-   "Canva",
-   "PowerPoint"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Bengaluru",
-   "Delhi NCR"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "dishika-arora",
@@ -927,26 +566,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Marketing",
-   "Entrepreneurship"
-  ],
-  "hardSkills": [
-   "Google Analytics",
-   "Content Writing",
-   "Copywriting",
-   "Notion"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Mumbai",
-   "Pune"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "divyanshi-joshi",
@@ -954,26 +582,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Founder's Office",
-   "Consulting",
-   "Product Management"
-  ],
-  "hardSkills": [
-   "PowerPoint",
-   "Budgeting & Forecasting",
-   "Data Analysis"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Pune",
-   "Delhi NCR"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "drishti-soni",
@@ -981,26 +598,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Strategy",
-   "Product Management"
-  ],
-  "hardSkills": [
-   "Strategy Frameworks",
-   "Data Analysis",
-   "Figma",
-   "Agile / Scrum"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Hyderabad",
-   "Delhi NCR"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "esha-ranjan",
@@ -1008,27 +614,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Strategy",
-   "Founder's Office",
-   "HR"
-  ],
-  "hardSkills": [
-   "Learning & Development",
-   "Talent Acquisition",
-   "Project Management",
-   "Presentation Design"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Remote",
-   "Kolkata"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "garavvams-rao",
@@ -1036,23 +630,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "HR"
-  ],
-  "hardSkills": [
-   "HR Analytics",
-   "Compensation & Benefits",
-   "Advanced Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Kolkata"
-  ],
+  "locations": [],
   "summary": "",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/garavvams-rao-9bb661317/",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "garvit-madan",
@@ -1060,26 +646,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "HR"
-  ],
-  "hardSkills": [
-   "HR Analytics",
-   "Employee Engagement",
-   "Talent Acquisition",
-   "Performance Management",
-   "Canva"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Pune",
-   "Mumbai"
-  ],
+  "locations": [],
   "summary": "",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/garvit-madan-59a847355/",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "gottemukkula-praneeth",
@@ -1087,25 +662,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Strategy",
-   "Product Management"
-  ],
-  "hardSkills": [
-   "SQL",
-   "Figma",
-   "Agile / Scrum",
-   "Data Analysis"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Hyderabad"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "gujju-puneeth-chandra-reddy",
@@ -1113,26 +678,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Product Management",
-   "Finance"
-  ],
-  "hardSkills": [
-   "Google Analytics",
-   "Agile / Scrum",
-   "Bloomberg",
-   "Data Analysis"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Bengaluru",
-   "Delhi NCR"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "gunjan-tolambiya",
@@ -1140,24 +694,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Strategy",
-   "Product Management"
-  ],
-  "hardSkills": [
-   "Market Research",
-   "Financial Modelling",
-   "Advanced Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Bengaluru"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "gyandeep-raj-p-v",
@@ -1165,26 +710,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "General Management",
-   "Others"
-  ],
-  "hardSkills": [
-   "Premiere Pro",
-   "Video Editing",
-   "Graphic Design",
-   "Notion",
-   "Presentation Design"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Bengaluru"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "hardik-baidhya",
@@ -1192,25 +726,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "General Management",
-   "Marketing"
-  ],
-  "hardSkills": [
-   "SEO",
-   "Social Media Marketing",
-   "Project Management",
-   "Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Remote"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "harshika-singh",
@@ -1218,25 +742,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "HR"
-  ],
-  "hardSkills": [
-   "Talent Acquisition",
-   "Learning & Development",
-   "Compensation & Benefits",
-   "Employee Engagement",
-   "Presentation Design"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Kolkata"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "harshit-choudhary",
@@ -1244,23 +758,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Strategy",
-   "General Management"
-  ],
-  "hardSkills": [
-   "PowerPoint",
-   "Project Management"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Kolkata"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "heet-patidar",
@@ -1268,26 +774,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Finance",
-   "Business Analytics",
-   "Marketing"
-  ],
-  "hardSkills": [
-   "Financial Statement Analysis",
-   "Equity Research",
-   "PowerPoint"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Kolkata",
-   "Mumbai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "hemant-vishnoi",
@@ -1295,27 +790,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Sales",
-   "Entrepreneurship",
-   "Supply Chain"
-  ],
-  "hardSkills": [
-   "Lead Generation",
-   "Presentation Design",
-   "Email Marketing",
-   "Logistics"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Mumbai",
-   "Pune"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "hridyaanshi-chomal",
@@ -1323,24 +806,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Founder's Office"
-  ],
-  "hardSkills": [
-   "Budgeting & Forecasting",
-   "Strategy Frameworks",
-   "Data Analysis"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Pune",
-   "Mumbai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "hritankar-das",
@@ -1348,26 +822,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Entrepreneurship",
-   "Product Management"
-  ],
-  "hardSkills": [
-   "Video Editing",
-   "SQL",
-   "Google Analytics",
-   "Canva"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Chennai",
-   "Remote"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "ishaan-prashant-golecha",
@@ -1375,28 +838,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "HR",
-   "Operations",
-   "Founder's Office"
-  ],
-  "hardSkills": [
-   "SAP",
-   "Lean / Six Sigma",
-   "Market Research",
-   "Notion",
-   "Data Analysis"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Delhi NCR",
-   "Mumbai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "jaie-surya-k",
@@ -1404,26 +854,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Founder's Office",
-   "Strategy"
-  ],
-  "hardSkills": [
-   "Notion",
-   "Financial Modelling",
-   "Project Management",
-   "Presentation Design"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Chennai",
-   "Mumbai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "japji-kaur",
@@ -1431,25 +870,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Operations"
-  ],
-  "hardSkills": [
-   "Inventory Management",
-   "Process Improvement",
-   "Advanced Excel",
-   "Presentation Design"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Delhi NCR",
-   "Bengaluru"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "jashan-hir",
@@ -1457,24 +886,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Marketing"
-  ],
-  "hardSkills": [
-   "Copywriting",
-   "Content Writing",
-   "Social Media Marketing",
-   "Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Kolkata"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "jatin-mangal",
@@ -1482,26 +902,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Sales",
-   "Founder's Office",
-   "Operations"
-  ],
-  "hardSkills": [
-   "Notion",
-   "Lead Generation",
-   "SAP",
-   "Lean / Six Sigma"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Bengaluru"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "jayesh-kumar-singh",
@@ -1509,25 +918,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Investment Banking",
-   "Others",
-   "Finance"
-  ],
-  "hardSkills": [
-   "Budgeting & Forecasting",
-   "Valuation"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Kolkata",
-   "Chennai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "kansara-aksh-minesh",
@@ -1535,25 +934,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Entrepreneurship"
-  ],
-  "hardSkills": [
-   "Budgeting & Forecasting",
-   "Digital Marketing",
-   "Notion",
-   "Figma"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Pune",
-   "Chennai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "karanam-satya-harshada",
@@ -1561,24 +950,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Founder's Office",
-   "Finance"
-  ],
-  "hardSkills": [
-   "Budgeting & Forecasting",
-   "Notion",
-   "PowerPoint"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Kolkata"
-  ],
+  "locations": [],
   "summary": "",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/harshada-karanam/",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "kartikey",
@@ -1586,25 +966,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Business Analytics",
-   "Strategy",
-   "Supply Chain"
-  ],
-  "hardSkills": [
-   "Lean / Six Sigma",
-   "Python"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Pune",
-   "Mumbai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "katari-keerthi-narayan",
@@ -1612,26 +982,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "General Management",
-   "Finance",
-   "Operations"
-  ],
-  "hardSkills": [
-   "Budgeting & Forecasting",
-   "Financial Statement Analysis",
-   "Strategy Frameworks"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Pune",
-   "Chennai"
-  ],
+  "locations": [],
   "summary": "",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/keerthi-narayan-4a8375411/",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "khanak-verma",
@@ -1665,25 +1024,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Operations",
-   "Investment Banking"
-  ],
-  "hardSkills": [
-   "Investment Analysis",
-   "Equity Research",
-   "Advanced Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Bengaluru",
-   "Chennai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "khyati-kalra",
@@ -1691,26 +1040,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Founder's Office",
-   "Sales",
-   "Consulting"
-  ],
-  "hardSkills": [
-   "CRM / Salesforce",
-   "Financial Modelling",
-   "Presentation Design"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Remote",
-   "Chennai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "krishay-nayyar",
@@ -1718,25 +1056,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Operations",
-   "Marketing",
-   "Finance"
-  ],
-  "hardSkills": [
-   "Project Management",
-   "Advanced Excel",
-   "PowerPoint"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Chennai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "krishna-chagti",
@@ -1744,27 +1072,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Investment Banking",
-   "Founder's Office"
-  ],
-  "hardSkills": [
-   "Financial Modelling",
-   "Budgeting & Forecasting",
-   "Strategy Frameworks",
-   "Notion",
-   "Presentation Design"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Mumbai",
-   "Hyderabad"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "krishna-subramanian-a",
@@ -1772,25 +1088,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Supply Chain",
-   "General Management",
-   "Finance"
-  ],
-  "hardSkills": [
-   "Accounting / Tally",
-   "SAP",
-   "Canva"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Chennai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "krishna-yadav",
@@ -1798,24 +1104,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Strategy",
-   "HR"
-  ],
-  "hardSkills": [
-   "Performance Management",
-   "Talent Acquisition"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Remote",
-   "Delhi NCR"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "kunal-shivhare",
@@ -1823,26 +1120,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Operations",
-   "Others",
-   "Entrepreneurship"
-  ],
-  "hardSkills": [
-   "Notion",
-   "Photoshop",
-   "Graphic Design"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Delhi NCR",
-   "Hyderabad"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "laasya-choudhury-nekkanti",
@@ -1850,28 +1136,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Strategy",
-   "Operations",
-   "Supply Chain"
-  ],
-  "hardSkills": [
-   "Inventory Management",
-   "Strategy Frameworks",
-   "Advanced Excel",
-   "Market Research",
-   "PowerPoint"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Remote",
-   "Pune"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "lakshita-chaudhary",
@@ -1879,27 +1152,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Sales",
-   "Others",
-   "Finance"
-  ],
-  "hardSkills": [
-   "Photography",
-   "CRM / Salesforce",
-   "Google Sheets",
-   "Presentation Design"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Pune",
-   "Chennai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "m-vishal",
@@ -1907,27 +1168,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Marketing",
-   "Strategy"
-  ],
-  "hardSkills": [
-   "Meta Ads",
-   "Canva",
-   "Financial Modelling",
-   "Strategy Frameworks",
-   "PowerPoint"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Pune",
-   "Hyderabad"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "madhav-singh",
@@ -1935,23 +1184,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "General Management"
-  ],
-  "hardSkills": [
-   "Process Improvement",
-   "Notion",
-   "Strategy Frameworks"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Bengaluru"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "mahadev-menon",
@@ -1959,25 +1200,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "HR"
-  ],
-  "hardSkills": [
-   "Learning & Development",
-   "Employee Engagement",
-   "HRIS",
-   "Talent Acquisition"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Delhi NCR",
-   "Chennai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "mansha-banga",
@@ -1985,25 +1216,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "HR",
-   "Marketing"
-  ],
-  "hardSkills": [
-   "Google Analytics",
-   "Performance Management",
-   "Compensation & Benefits",
-   "Data Analysis"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Chennai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "mehar-ravi-arora",
@@ -2011,26 +1232,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Operations",
-   "Marketing"
-  ],
-  "hardSkills": [
-   "Inventory Management",
-   "Meta Ads",
-   "Copywriting",
-   "Advanced Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Remote",
-   "Mumbai"
-  ],
+  "locations": [],
   "summary": "",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/mehar-arora-b31721232/",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "navya-shah",
@@ -2038,23 +1248,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Product Management",
-   "Marketing"
-  ],
-  "hardSkills": [
-   "Content Writing",
-   "Brand Management"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Remote"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "nethra-r",
@@ -2088,23 +1290,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Consulting"
-  ],
-  "hardSkills": [
-   "Market Research",
-   "Strategy Frameworks"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Remote",
-   "Kolkata"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "nikhileshwar-kumar",
@@ -2112,25 +1306,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Operations",
-   "General Management"
-  ],
-  "hardSkills": [
-   "Process Improvement",
-   "Inventory Management",
-   "Strategy Frameworks",
-   "Budgeting & Forecasting"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Remote"
-  ],
+  "locations": [],
   "summary": "",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/nikhileshwar-kumar-930aa53aa/",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "nitya-jaiswal",
@@ -2138,26 +1322,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Consulting",
-   "HR",
-   "Sales"
-  ],
-  "hardSkills": [
-   "PowerPoint",
-   "Email Marketing",
-   "Compensation & Benefits"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Remote",
-   "Kolkata"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "nukala-surya-prakash",
@@ -2165,25 +1338,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Marketing",
-   "Supply Chain"
-  ],
-  "hardSkills": [
-   "Meta Ads",
-   "Digital Marketing",
-   "Data Analysis"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Hyderabad",
-   "Chennai"
-  ],
+  "locations": [],
   "summary": "",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/surya-prakash-nukala-93b747269/",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "p-khrish-sidharth",
@@ -2191,23 +1354,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Marketing"
-  ],
-  "hardSkills": [
-   "Content Writing",
-   "Social Media Marketing",
-   "Advanced Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Remote"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "pallavi-kumari",
@@ -2215,25 +1370,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Marketing"
-  ],
-  "hardSkills": [
-   "Canva",
-   "Copywriting",
-   "Google Analytics",
-   "Advanced Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Pune",
-   "Bengaluru"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "parijat-kusum-borah",
@@ -2269,26 +1414,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Consulting",
-   "Product Management"
-  ],
-  "hardSkills": [
-   "Strategy Frameworks",
-   "SQL",
-   "Google Analytics",
-   "Data Analysis",
-   "Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Mumbai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "pia-gujral",
@@ -2296,25 +1430,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "General Management",
-   "Marketing"
-  ],
-  "hardSkills": [
-   "Project Management",
-   "Social Media Marketing",
-   "Strategy Frameworks"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Remote",
-   "Hyderabad"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "prakhar-mani-tripathi",
@@ -2322,25 +1446,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Consulting",
-   "General Management",
-   "Product Management"
-  ],
-  "hardSkills": [
-   "Jira",
-   "SQL",
-   "Advanced Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Kolkata"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "prateek",
@@ -2348,25 +1462,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Finance",
-   "General Management",
-   "Others"
-  ],
-  "hardSkills": [
-   "Bloomberg",
-   "Valuation",
-   "Canva"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Hyderabad"
-  ],
+  "locations": [],
   "summary": "",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/prateek-30b420383/",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "prinshu-somay",
@@ -2374,25 +1478,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "HR",
-   "Business Analytics",
-   "Supply Chain"
-  ],
-  "hardSkills": [
-   "Power BI",
-   "Looker Studio",
-   "Advanced Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Pune"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "priya-prasad",
@@ -2400,26 +1494,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Sales",
-   "Founder's Office"
-  ],
-  "hardSkills": [
-   "Market Research",
-   "Email Marketing",
-   "Notion",
-   "Advanced Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Mumbai",
-   "Remote"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "priyanshi-bishnoi",
@@ -2427,27 +1510,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "HR",
-   "Supply Chain",
-   "Business Analytics"
-  ],
-  "hardSkills": [
-   "Talent Acquisition",
-   "Performance Management",
-   "R",
-   "Canva"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Remote",
-   "Delhi NCR"
-  ],
+  "locations": [],
   "summary": "",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/priyanshi-bishnoi-721ba6385/",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "priyanshu-singh",
@@ -2455,26 +1526,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Investment Banking",
-   "HR",
-   "Strategy"
-  ],
-  "hardSkills": [
-   "Strategy Frameworks",
-   "Market Research",
-   "HR Analytics",
-   "Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Chennai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "ranvir-vikas-gaikwad",
@@ -2482,25 +1542,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Marketing",
-   "Strategy"
-  ],
-  "hardSkills": [
-   "Canva",
-   "PowerPoint",
-   "Market Research"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Hyderabad",
-   "Remote"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "reet-patidar",
@@ -2508,27 +1558,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Consulting",
-   "Investment Banking",
-   "Others"
-  ],
-  "hardSkills": [
-   "Equity Research",
-   "Strategy Frameworks",
-   "Google Sheets",
-   "Premiere Pro",
-   "Presentation Design"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Delhi NCR"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "riddhi-pahwa",
@@ -2536,23 +1574,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Finance"
-  ],
-  "hardSkills": [
-   "Equity Research",
-   "Budgeting & Forecasting"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Hyderabad",
-   "Mumbai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "riddhima-dayal",
@@ -2560,24 +1590,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Consulting"
-  ],
-  "hardSkills": [
-   "Financial Modelling",
-   "Market Research",
-   "Canva"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Remote",
-   "Kolkata"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "rigved-pal",
@@ -2585,26 +1606,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Marketing",
-   "General Management"
-  ],
-  "hardSkills": [
-   "Budgeting & Forecasting",
-   "Meta Ads",
-   "Copywriting",
-   "Project Management",
-   "Data Analysis"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Delhi NCR"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "rijul-srivastava",
@@ -2612,26 +1622,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Operations",
-   "Sales",
-   "Strategy"
-  ],
-  "hardSkills": [
-   "Strategy Frameworks",
-   "SAP",
-   "Advanced Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Mumbai",
-   "Kolkata"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "ritisha-jaiswal",
@@ -2639,26 +1638,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Supply Chain",
-   "HR"
-  ],
-  "hardSkills": [
-   "Inventory Management",
-   "Supply Chain Planning",
-   "Advanced Excel",
-   "Data Analysis"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Mumbai",
-   "Delhi NCR"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "sai-akshit-ram-marella",
@@ -2693,25 +1681,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Investment Banking",
-   "Marketing"
-  ],
-  "hardSkills": [
-   "Capital IQ",
-   "Copywriting",
-   "Advanced Excel",
-   "Investment Analysis"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Kolkata"
-  ],
+  "locations": [],
   "summary": "",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/saksham-aggarwal-9994a9358/",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "sameeksha",
@@ -2719,24 +1697,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "General Management",
-   "HR"
-  ],
-  "hardSkills": [
-   "Process Improvement",
-   "Strategy Frameworks"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Kolkata",
-   "Remote"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "sameer-prashant-chandrikapure",
@@ -2744,23 +1713,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Business Analytics"
-  ],
-  "hardSkills": [
-   "Data Visualisation",
-   "SQL",
-   "Machine Learning"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Chennai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "samridhi-jain",
@@ -2768,27 +1729,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Founder's Office",
-   "Supply Chain"
-  ],
-  "hardSkills": [
-   "Logistics",
-   "Inventory Management",
-   "Lean / Six Sigma",
-   "Data Analysis",
-   "Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Hyderabad",
-   "Remote"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "sanjana-biju",
@@ -2796,28 +1745,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Sales",
-   "Strategy",
-   "Investment Banking"
-  ],
-  "hardSkills": [
-   "PowerPoint",
-   "Data Analysis",
-   "CRM / Salesforce",
-   "Lead Generation",
-   "Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Chennai",
-   "Pune"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "sanskar-patidar",
@@ -2825,26 +1761,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Product Management",
-   "Strategy"
-  ],
-  "hardSkills": [
-   "Strategy Frameworks",
-   "Financial Modelling",
-   "SQL",
-   "PowerPoint"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Remote",
-   "Mumbai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "sanskriti-singh",
@@ -2852,23 +1777,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Sales",
-   "General Management"
-  ],
-  "hardSkills": [
-   "Email Marketing",
-   "Strategy Frameworks"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Chennai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "shreeya-sahu",
@@ -2876,24 +1793,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Founder's Office",
-   "Sales"
-  ],
-  "hardSkills": [
-   "Market Research",
-   "CRM / Salesforce"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Bengaluru",
-   "Kolkata"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "shristi-ranjan",
@@ -2927,24 +1835,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Strategy",
-   "Supply Chain"
-  ],
-  "hardSkills": [
-   "SAP",
-   "Lean / Six Sigma",
-   "Market Research"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Chennai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "siddhant-aggarwal",
@@ -2952,25 +1851,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Founder's Office",
-   "General Management"
-  ],
-  "hardSkills": [
-   "Process Improvement",
-   "Project Management",
-   "Canva"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Bengaluru",
-   "Remote"
-  ],
+  "locations": [],
   "summary": "",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/siddhant-aggarwal-370a673b8/",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "sukriti-saxena",
@@ -2978,23 +1867,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Investment Banking"
-  ],
-  "hardSkills": [
-   "Financial Modelling",
-   "Valuation"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Bengaluru",
-   "Hyderabad"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "utkarsh-chaturvedi",
@@ -3002,25 +1883,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Finance",
-   "Operations"
-  ],
-  "hardSkills": [
-   "Process Improvement",
-   "Accounting / Tally",
-   "Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Mumbai",
-   "Chennai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "utpal-chandra",
@@ -3028,24 +1899,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Sales",
-   "Founder's Office"
-  ],
-  "hardSkills": [
-   "Data Analysis",
-   "Notion"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Kolkata",
-   "Pune"
-  ],
+  "locations": [],
   "summary": "",
-  "linkedin": "",
+  "linkedin": "https://www.linkedin.com/in/utpal-chandra-92b6403ab/",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "utsav-kumar-nirala",
@@ -3053,23 +1915,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Investment Banking"
-  ],
-  "hardSkills": [
-   "Investment Analysis",
-   "Valuation"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Hyderabad",
-   "Mumbai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "vani-goyal",
@@ -3077,25 +1931,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Business Analytics",
-   "Consulting"
-  ],
-  "hardSkills": [
-   "SQL",
-   "Strategy Frameworks",
-   "Excel"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Delhi NCR",
-   "Chennai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "vibhuti-jharia",
@@ -3103,27 +1947,15 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "Others",
-   "Investment Banking",
-   "Founder's Office"
-  ],
-  "hardSkills": [
-   "Project Management",
-   "Market Research",
-   "Investment Analysis",
-   "Data Analysis"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Kolkata",
-   "Mumbai"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  },
  {
   "id": "yashraj-pippal",
@@ -3131,24 +1963,14 @@ window.STUDENTS = [
   "programme": "BMS",
   "batch": "2025",
   "cgpa": null,
-  "domains": [
-   "General Management"
-  ],
-  "hardSkills": [
-   "Budgeting & Forecasting",
-   "Notion",
-   "Project Management",
-   "Presentation Design"
-  ],
+  "domains": [],
+  "hardSkills": [],
   "clubs": [],
   "internship": "",
-  "locations": [
-   "Pune",
-   "Hyderabad"
-  ],
+  "locations": [],
   "summary": "",
   "linkedin": "",
   "photo": "",
-  "sample": true
+  "sample": false
  }
 ];
