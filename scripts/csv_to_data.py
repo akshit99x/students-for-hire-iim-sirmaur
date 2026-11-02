@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Convert data/students.csv into data/students.js (the file the website reads).
 
-Usage:  python3 scripts/csv_to_data.py data/students.csv
+Usage:  python3 scripts/csv_to_data.py data/students.csv            real data only
+        python3 scripts/csv_to_data.py data/students.csv --sample   also fill empty profiles with placeholders
 
 Columns (header row required; list columns are separated by ';'):
   name, cgpa, domains, hard_skills, clubs, internship, locations, summary, linkedin, photo
@@ -9,8 +10,12 @@ Columns (header row required; list columns are separated by ';'):
 Only name is required (cgpa is optional and only displayed, never filtered). Leave the rest empty until the student submits them.
 `domains` is ordered: the first one is the student's primary domain.
 LinkedIn tracking parameters (?utm_...) are stripped automatically.
+
+--sample gives every student who has NOT submitted domains/hard skills a random (but repeatable) set of
+placeholder domains, hard skills and locations, flagged "sample": true so the site labels them "Sample".
+Students who have filled in their own details are never touched. Drop the flag once real data arrives.
 """
-import csv, json, re, sys, pathlib
+import csv, json, random, re, sys, pathlib
 from urllib.parse import urlsplit, urlunsplit
 
 def slug(n):
@@ -29,7 +34,37 @@ def clean_url(u):
     p = urlsplit(u)
     return urlunsplit((p.scheme, p.netloc, p.path, "", ""))
 
-def main(src):
+# Placeholder pools (skill names must match CONFIG.skillGroups in js/app.js).
+GENERAL = ["Excel", "PowerPoint", "Advanced Excel", "Data Analysis", "Presentation Design", "Canva"]
+POOLS = {
+    "Consulting": ["Strategy Frameworks", "Market Research", "Data Analysis", "Advanced Excel", "PowerPoint", "Financial Modelling"],
+    "Founder's Office": ["Strategy Frameworks", "Project Management", "Data Analysis", "Notion", "Market Research", "Budgeting & Forecasting"],
+    "Marketing": ["Digital Marketing", "SEO", "Social Media Marketing", "Content Writing", "Copywriting", "Canva", "Brand Management", "Google Analytics", "Meta Ads"],
+    "General Management": ["Project Management", "Strategy Frameworks", "Process Improvement", "Budgeting & Forecasting", "Notion"],
+    "Finance": ["Financial Modelling", "Valuation", "Financial Statement Analysis", "Accounting / Tally", "Bloomberg", "Equity Research", "Budgeting & Forecasting", "Advanced Excel"],
+    "Investment Banking": ["Financial Modelling", "Valuation", "Capital IQ", "Bloomberg", "Equity Research", "Investment Analysis", "Advanced Excel"],
+    "Operations": ["Process Improvement", "Lean / Six Sigma", "Project Management", "Inventory Management", "Advanced Excel", "SAP"],
+    "Supply Chain": ["Supply Chain Planning", "Inventory Management", "Logistics", "SAP", "Advanced Excel", "Lean / Six Sigma"],
+    "Sales": ["Lead Generation", "CRM / Salesforce", "Email Marketing", "Market Research", "Presentation Design"],
+    "Product Management": ["Figma", "Jira", "Agile / Scrum", "SQL", "Google Analytics", "Market Research"],
+    "Business Analytics": ["SQL", "Python", "Power BI", "Tableau", "R", "Statistics", "Data Visualisation", "Machine Learning", "Looker Studio"],
+    "HR": ["Talent Acquisition", "HR Analytics", "HRIS", "Compensation & Benefits", "Performance Management", "Learning & Development", "Employee Engagement"],
+    "Strategy": ["Strategy Frameworks", "Market Research", "Data Analysis", "Financial Modelling", "PowerPoint"],
+    "Entrepreneurship": ["Figma", "Canva", "Digital Marketing", "Budgeting & Forecasting", "Video Editing", "Notion"],
+    "Others": ["Photography", "Video Editing", "Photoshop", "Graphic Design", "Premiere Pro", "Google Sheets"],
+}
+LOCATIONS = ["Delhi NCR", "Mumbai", "Bengaluru", "Hyderabad", "Pune", "Chennai", "Kolkata", "Remote"]
+
+def sample_profile(key):
+    r = random.Random(key)  # seeded by the student's id, so reruns give the same placeholders
+    doms = r.sample(list(POOLS), r.choice([1, 2, 2, 3]))
+    pool = [k for d in doms for k in POOLS[d]]
+    skills = r.sample(sorted(set(pool)), min(len(set(pool)), r.randint(2, 4)))
+    if r.random() < .6:
+        skills += [g for g in r.sample(GENERAL, 1) if g not in skills]
+    return doms, skills, r.sample(LOCATIONS, r.choice([1, 2, 2]))
+
+def main(src, sample=False):
     rows = []
     with open(src, newline="", encoding="utf-8-sig") as f:
         for r in csv.DictReader(f):
@@ -37,20 +72,26 @@ def main(src):
             if not name:
                 continue
             cg = (r.get("cgpa") or "").strip()
+            sid = slug(name)
+            doms, skills, locs = lst(r.get("domains")), lst(r.get("hard_skills")), lst(r.get("locations"))
+            is_sample = sample and not doms and not skills
+            if is_sample:
+                doms, skills, locs = sample_profile(sid)
             rows.append({
-                "id": slug(name),
+                "id": sid,
                 "name": name,
                 "programme": "BMS",
                 "batch": "2025",
                 "cgpa": float(cg) if cg else None,
-                "domains": lst(r.get("domains")),
-                "hardSkills": lst(r.get("hard_skills")),
+                "domains": doms,
+                "hardSkills": skills,
                 "clubs": lst(r.get("clubs")),
                 "internship": (r.get("internship") or "").strip(),
-                "locations": lst(r.get("locations")),
+                "locations": locs,
                 "summary": (r.get("summary") or "").strip(),
                 "linkedin": clean_url(r.get("linkedin")),
                 "photo": (r.get("photo") or "").strip(),
+                "sample": is_sample,
             })
     rows.sort(key=lambda s: s["name"])
     out = pathlib.Path(src).with_name("students.js")
@@ -59,6 +100,7 @@ def main(src):
     print(f"wrote {len(rows)} students to {out}")
 
 if __name__ == "__main__":
-    if len(sys.argv) != 2:
+    args = [a for a in sys.argv[1:] if a != "--sample"]
+    if len(args) != 1:
         sys.exit(__doc__)
-    main(sys.argv[1])
+    main(args[0], "--sample" in sys.argv)

@@ -3,15 +3,23 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'none'; frame-src 'none'; object-src 'none'; form-action 'none'; base-uri 'none'">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#0061a0">
 <title>Students for Hire · IIM Sirmaur</title>
-<meta name="description" content="Browse the IIM Sirmaur batch by domain and hard skills, and go straight to each student's LinkedIn profile.">
+<meta name="description" content="Meet the IIM Sirmaur BMS batch. Filter by domain and hard skills, shortlist candidates and go straight to each student's LinkedIn profile.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Students for Hire · IIM Sirmaur">
+<meta property="og:description" content="Browse the IIM Sirmaur BMS batch by domain and hard skills and connect on LinkedIn.">
+<meta property="og:image" content="https://akshit99x.github.io/students-for-hire-iim-sirmaur/assets/campus-night.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="assets/logo.png" type="image/png">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Cinzel:wght@500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<script src="js/guard.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#talent">Skip to the talent pool</a>
+<noscript><div class="noscript">This portal needs JavaScript to filter profiles. Please enable it, or email the Placement Committee at bmspcom1@iimsirmaur.ac.in.</div></noscript>
 
 <div class="brand-bar">
   <div class="wrap">
@@ -24,24 +32,27 @@
 <nav class="nav-bar" aria-label="Main">
   <div class="wrap"><ul>
     <li><a href="#talent" aria-current="page">Talent Pool</a></li>
-    <li><a href="#recruiters">For Recruiters</a></li>
+    <li><a href="#recruiters">For Recruiters &amp; HR</a></li>
+    <li><a href="#faq">FAQ</a></li>
     <li><a href="students.html">For Students</a></li>
   </ul></div>
 </nav>
 
-<header class="hero" style="background-image:url(assets/campus-night.jpg)">
+<header class="hero">
   <div class="wrap">
     <span class="eyebrow">Knowledge · Leadership</span>
     <h1>Meet the IIM Sirmaur BMS batch, in one place.</h1>
-    <p class="lead">Our campus is far from the corporate hubs, so we bring the talent to you. Browse interns and future hires by domain and hard skills, then jump straight to a student's LinkedIn profile.</p>
-    <a class="btn btn-gold" href="#talent">Browse talent ↓</a>
-    <a class="btn btn-ghost" href="#recruiters">How it works</a>
+    <p class="lead">From the calm of the Himalayan foothills comes a batch that is focused, curious and ready to deliver. Explore future interns and hires by domain and hard skills, then connect directly on LinkedIn.</p>
+    <div class="btn-row">
+      <a class="btn btn-gold" href="#talent">Browse talent ↓</a>
+      <a class="btn btn-ghost" href="#recruiters">For recruiters &amp; HR</a>
+    </div>
     <div class="stats" id="stats" aria-live="polite"></div>
   </div>
 </header>
 
 <div class="sample-banner" id="sampleBanner" hidden>
-  <div class="wrap"><span><b>Profiles are being added.</b> Students are still submitting their domains and hard skills. LinkedIn links appear as they come in.</span><button aria-label="Dismiss" id="sampleClose">×</button></div>
+  <div class="wrap"><span><b>Preview data.</b> Domains, hard skills and locations marked <em>Sample</em> are placeholders until each student confirms their own. Names and LinkedIn links are real.</span><button aria-label="Dismiss" id="sampleClose" type="button">×</button></div>
 </div>
 
 <main class="talent" id="talent">
@@ -56,14 +67,14 @@
         <header><h3>Filters</h3><button type="button" id="resetBtn">Reset all</button></header>
 
         <div class="fgroup">
-          <h4>Search</h4>
-          <input class="input" id="q" type="search" placeholder="Name, hard skill, club, domain…" autocomplete="off">
+          <h4>Search <small>press / to jump here</small></h4>
+          <input class="input" id="q" type="search" placeholder="Name, hard skill, domain…" autocomplete="off" maxlength="80">
         </div>
 
         <div class="fgroup">
           <h4>Domain <small>pick one or more</small></h4>
           <div class="chips" id="fDomain"></div>
-          <div class="seg" style="margin-top:12px" role="group" aria-label="Domain match mode">
+          <div class="seg mt-12" role="group" aria-label="Domain match mode">
             <button type="button" data-mode="any" aria-pressed="true">Any selected</button>
             <button type="button" data-mode="all" aria-pressed="false">All selected</button>
           </div>
@@ -72,13 +83,18 @@
 
         <div class="fgroup">
           <h4>Hard skills <small>pick one or more</small></h4>
-          <div class="chips" id="fSkill"></div>
+          <input class="input search-skill" id="skillQ" type="search" placeholder="Find a skill (Excel, SQL, Figma…)" autocomplete="off" maxlength="40" aria-label="Find a hard skill">
+          <div id="fSkill"></div>
+          <div class="seg mt-12" role="group" aria-label="Hard skill match mode">
+            <button type="button" data-smode="any" aria-pressed="true">Any selected</button>
+            <button type="button" data-smode="all" aria-pressed="false">All selected</button>
+          </div>
         </div>
 
         <div class="fgroup">
           <h4>Profile</h4>
-          <label class="check" style="margin-top:0"><input type="checkbox" id="onlyLinkedin"> LinkedIn available</label>
-          <label class="check"><input type="checkbox" id="onlyDetails"> Details filled in</label>
+          <label class="check mt-0"><input type="checkbox" id="onlyLinkedin"> LinkedIn available</label>
+          <label class="check"><input type="checkbox" id="onlyDetails"> Student-confirmed details</label>
         </div>
 
         <div class="fgroup">
@@ -88,12 +104,13 @@
       </aside>
 
       <section aria-label="Results">
+        <div class="quick" aria-label="Quick domain filter"><b>Domain</b><span class="chips" id="quickDomain"></span></div>
         <div class="toolbar">
           <button class="btn btn-blue btn-sm filter-open" id="openFilters" type="button">☰ Filters</button>
           <div class="count" id="count" aria-live="polite"></div>
           <label class="sr" for="sort">Sort by</label>
           <select class="input" id="sort">
-            <option value="complete">Complete profiles first</option>
+            <option value="complete">LinkedIn-ready first</option>
             <option value="name">Name (A–Z)</option>
             <option value="shuffle">Random order (fair)</option>
           </select>
@@ -110,27 +127,53 @@
   </div>
 </main>
 
-<section class="photo-strip" style="background-image:url(assets/campus-hostels.jpg)" aria-label="IIM Sirmaur campus">
-  <blockquote>Distance from the city should never be distance from the opportunity.</blockquote>
+<section class="photo-strip" aria-label="IIM Sirmaur campus">
+  <blockquote>Where the mountains teach focus and the classroom teaches business.</blockquote>
 </section>
 
 <section class="band white" id="recruiters">
   <div class="wrap">
-    <h2>For recruiters</h2>
-    <p class="lead">Built so you can go from "who is on this campus?" to "I'd like to speak to these eight people" in a few minutes, without a campus trip.</p>
+    <h2>For recruiters &amp; HR</h2>
+    <p class="lead">Go from "who is in this batch?" to "I'd like to speak to these eight people" in a few minutes, wherever your team is based.</p>
     <div class="cols3">
-      <div class="panel"><div class="ico">1</div><h3>Filter</h3><p>Narrow the batch to the domains you hire for, such as consulting, founder's office, marketing, finance, operations, supply chain or sales, then by hard skills such as Excel, SQL, Python or financial modelling.</p></div>
-      <div class="panel"><div class="ico">2</div><h3>Shortlist</h3><p>Star the profiles you like. Your shortlist stays in your browser. Export it as a CSV or copy all the LinkedIn links in one click.</p></div>
-      <div class="panel"><div class="ico">3</div><h3>Connect</h3><p>Every card opens the student's live LinkedIn profile. Reach out to the Placement Committee to arrange internships and interviews, in person or virtual.</p></div>
+      <div class="panel"><div class="ico">1</div><h3>Filter</h3><p>Narrow the batch to the domains you hire for, such as consulting, founder's office, marketing, finance, HR, operations, supply chain or sales, then by hard skills such as Excel, SQL, Python or financial modelling.</p></div>
+      <div class="panel"><div class="ico">2</div><h3>Shortlist</h3><p>Star the profiles you like. Your shortlist stays in your own browser. Export it as a CSV, copy all the LinkedIn links, or email it straight to the Placement Committee.</p></div>
+      <div class="panel"><div class="ico">3</div><h3>Connect</h3><p>Every card opens the student's live LinkedIn profile. The Placement Committee helps you arrange internships, pre-placement talks and interviews, in person or virtual.</p></div>
+    </div>
+
+    <h3 class="hr-h">Hiring teams we can support</h3>
+    <div class="cols4">
+      <div class="panel"><h3>Summer internships</h3><p>Short, project-based roles across functions.</p></div>
+      <div class="panel"><h3>Final placements</h3><p>Full-time entry roles for the graduating BMS batch.</p></div>
+      <div class="panel"><h3>HR &amp; talent teams</h3><p>Shortlist by domain, then coordinate drives and interview slots with one point of contact.</p></div>
+      <div class="panel"><h3>Live projects</h3><p>Case work and short assignments with student teams.</p></div>
+    </div>
+    <div class="cta-row">
+      <a class="btn btn-blue" href="mailto:bmspcom1@iimsirmaur.ac.in?subject=Hiring%20enquiry%20%E2%80%93%20IIM%20Sirmaur%20BMS%20batch">Email the Placement Committee</a>
+      <span class="muted-note flush">bmspcom1@iimsirmaur.ac.in</span>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="faq">
+  <div class="wrap">
+    <h2>Questions recruiters ask</h2>
+    <p class="lead">Short answers before you write to us.</p>
+    <div class="faq">
+      <details><summary>How do I contact a student?</summary><p>Open their card and use the LinkedIn button, or write to the Placement Committee and we will coordinate interviews and campus or virtual drives for you.</p></details>
+      <details><summary>Which batch is this?</summary><p>The BMS (undergraduate) batch of IIM Sirmaur. Each card shows the student's own domains, hard skills and preferred locations once they confirm them.</p></details>
+      <details><summary>Is everything on a card confirmed by the student?</summary><p>Details marked <em>Sample</em> are placeholders while the batch finishes submitting their profiles. Use the <em>Student-confirmed details</em> filter to see only profiles the student has completed.</p></details>
+      <details><summary>Does the portal track me?</summary><p>No. There are no cookies, analytics or third-party requests. Your shortlist is saved only in your browser and never sent anywhere.</p></details>
+      <details><summary>How do I share a filtered view with my team?</summary><p>Click <em>Copy link to this view</em>. The link reopens the same filters, sort order and layout.</p></details>
     </div>
   </div>
 </section>
 
 <footer class="site">
   <div class="wrap">
-    <div><h4>Placement Committee</h4><p>IIM Sirmaur · Rajban, Paonta Sahib<br>Sirmaur, Himachal Pradesh<br><a href="mailto:placements@iimsirmaur.ac.in">placements@iimsirmaur.ac.in</a><br><small>(placeholder, confirm the real address)</small></p></div>
-    <div><h4>Explore</h4><p><a href="students.html">For students</a></p></div>
-    <p class="legal">Made for Operations Management, IIM Sirmaur. Profile data is shared with each student's consent.</p>
+    <div class="contact"><h4>Placement Committee</h4><p>IIM Sirmaur · Rajban, Paonta Sahib<br>Sirmaur, Himachal Pradesh<br><a href="mailto:bmspcom1@iimsirmaur.ac.in">bmspcom1@iimsirmaur.ac.in</a></p></div>
+    <div><h4>Explore</h4><p><a href="#talent">Talent pool</a><br><a href="#faq">Recruiter FAQ</a><br><a href="students.html">For students</a></p></div>
+    <p class="legal">Made for Operations Management, IIM Sirmaur. Profile data is shared with each student's consent. No cookies, no tracking.</p>
   </div>
 </footer>
 
@@ -138,6 +181,7 @@
   <span><b id="shortN">0</b> shortlisted</span>
   <button class="btn btn-gold" id="exportCsv" type="button">Export CSV</button>
   <button class="btn btn-ghost" id="copyLinks" type="button">Copy LinkedIn links</button>
+  <button class="btn btn-ghost" id="mailShort" type="button">Email Placecom</button>
   <button class="link" id="clearShort" type="button">Clear</button>
 </div>
 <div class="toast" id="toast" role="status"></div>

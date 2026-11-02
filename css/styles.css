@@ -1,6 +1,10 @@
 /* IIM Sirmaur – Students for Hire
    Palette sampled from the official logo and website template:
    shield blue #0F60A2 / nav bar #0061A0, sun yellow #FDC20C, light grey #DFE0E2. */
+/* Fonts are self-hosted (SIL Open Font License) so the site makes no third-party requests. */
+@font-face { font-family: "Open Sans"; font-style: normal; font-weight: 400 700; font-display: swap; src: url(../assets/fonts/opensans-latin.woff2) format("woff2"); }
+@font-face { font-family: "Cinzel"; font-style: normal; font-weight: 400 900; font-display: swap; src: url(../assets/fonts/cinzel-latin.woff2) format("woff2"); }
+
 :root {
   --blue: #0061a0;
   --blue-deep: #0b3a5e;
@@ -41,7 +45,7 @@ img { max-width: 100%; display: block; }
 .nav-bar a:hover, .nav-bar a[aria-current="page"] { background: var(--blue-deep); box-shadow: inset 0 -3px 0 var(--gold); }
 
 /* ---------- hero ---------- */
-.hero { position: relative; color: #fff; background: var(--navy) center/cover no-repeat; isolation: isolate; }
+.hero { position: relative; color: #fff; background: var(--navy) url(../assets/campus-night.jpg) center/cover no-repeat; isolation: isolate; }
 .hero::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(100deg, rgba(10,37,64,.94) 0%, rgba(0,97,160,.78) 55%, rgba(0,97,160,.35) 100%); }
 .hero .wrap { padding-top: 72px; padding-bottom: 56px; }
 .eyebrow { display: inline-block; font-size: 12px; letter-spacing: .22em; text-transform: uppercase; font-weight: 700; color: var(--gold); margin-bottom: 14px; }
@@ -185,7 +189,7 @@ dialog::backdrop { background: rgba(10,37,64,.65); backdrop-filter: blur(2px); }
 .panel .ico { width: 42px; height: 42px; border-radius: 10px; background: var(--blue); color: var(--gold); display: grid; place-items: center; font-weight: 800; font-size: 20px; margin-bottom: 12px; font-family: var(--font-head); }
 .panel h3 { margin: 0 0 6px; color: var(--navy); }
 .panel p { margin: 0; color: var(--muted); }
-.photo-strip { height: 260px; background: center/cover no-repeat; position: relative; }
+.photo-strip { height: 260px; background: var(--navy) url(../assets/campus-hostels.jpg) center/cover no-repeat; position: relative; }
 .photo-strip::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(10,37,64,.5), rgba(10,37,64,0) 60%); }
 .photo-strip blockquote { position: absolute; z-index: 1; left: 0; right: 0; bottom: 22px; margin: 0; color: #fff; font-family: var(--font-head); font-size: clamp(18px, 2.6vw, 28px); text-align: center; padding: 0 20px; }
 .steps { counter-reset: s; list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
@@ -239,3 +243,50 @@ footer.site .legal { width: 100%; border-top: 1px solid rgba(255,255,255,.15); p
 .card.slim .avatar { width: 48px; height: 48px; font-size: 17px; }
 .btn.disabled { opacity: .55; cursor: default; box-shadow: inset 0 0 0 1.5px var(--line); color: var(--muted); }
 .grid.list .card .pending { flex: 1 1 220px; }
+
+/* ---------- additions: accessibility, quick domains, grouped hard skills, FAQ, sample data ---------- */
+.skip-link { position: absolute; left: 12px; top: -60px; z-index: 100; background: var(--gold); color: var(--navy); padding: 10px 16px; border-radius: 8px; font-weight: 700; text-decoration: none; }
+.skip-link:focus { top: 12px; }
+.noscript { background: var(--gold-tint); color: var(--gold-ink); padding: 14px 20px; text-align: center; font-weight: 600; }
+.hero .btn-row { display: flex; flex-wrap: wrap; gap: 10px; }
+.empty { grid-column: 1 / -1; }
+.flush { margin: 0; }
+.mt-12 { margin-top: 12px; }
+.mt-0 { margin-top: 0; }
+.muted-note { margin-top: 14px; color: var(--muted); }
+
+.quick { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; padding-bottom: 4px; overflow-x: auto; scrollbar-width: thin; }
+.quick > b { flex: none; font-size: 12px; letter-spacing: .14em; text-transform: uppercase; color: var(--blue-deep); margin-right: 4px; }
+.quick .chip { flex: none; }
+
+.search-skill { margin-bottom: 10px; padding: 8px 10px; font-size: 14px; }
+.skillgrp { border: 1px solid var(--line); border-radius: 8px; margin-bottom: 8px; background: #fff; }
+.skillgrp summary { cursor: pointer; padding: 8px 12px; font-size: 13.5px; font-weight: 600; color: var(--navy); list-style: none; display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+.skillgrp summary::-webkit-details-marker { display: none; }
+.skillgrp summary::after { content: "+"; color: var(--blue); font-size: 18px; line-height: 1; }
+.skillgrp[open] summary::after { content: "−"; }
+.skillgrp summary .sel { margin-left: auto; background: var(--blue); color: #fff; font-size: 11.5px; border-radius: 999px; padding: 1px 8px; }
+.skillgrp .chips { padding: 2px 10px 12px; }
+.skillgrp.none { display: none; }
+.chip.hide { display: none; }
+
+.tag.sample { background: var(--gold-tint); color: var(--gold-ink); box-shadow: inset 0 0 0 1px #f1d977; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; }
+.card .sample-note { margin: 0; font-size: 12.5px; color: var(--gold-ink); }
+.card-top .tag.sample { margin-left: auto; align-self: flex-start; }
+.grid.list .card .sample-note { display: none; }
+
+.cols4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; margin-top: 8px; }
+.cta-row { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; margin-top: 26px; }
+.faq { display: grid; gap: 10px; max-width: 860px; }
+.faq details { background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 0 18px; }
+.faq summary { cursor: pointer; padding: 14px 0; font-weight: 600; color: var(--navy); }
+.faq details[open] summary { color: var(--blue); }
+.faq details p { margin: 0 0 14px; color: var(--muted); }
+.band:not(.white) .faq details { box-shadow: var(--shadow); }
+.trust { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+.trust span { font-size: 13px; background: var(--sky-tint); color: var(--blue-deep); padding: 4px 11px; border-radius: 999px; font-weight: 600; }
+footer.site .contact a { word-break: break-all; }
+.hr-h { font-family: var(--font-head); color: var(--navy); margin: 40px 0 4px; font-size: 22px; }
+.quick .chips { flex-wrap: nowrap; }
+.layout > section { min-width: 0; }
+.quick { max-width: 100%; }

@@ -1,0 +1,4 @@
+Contact: mailto:bmspcom1@iimsirmaur.ac.in
+Expires: 2027-11-01T00:00:00.000Z
+Preferred-Languages: en
+Canonical: https://akshit99x.github.io/students-for-hire-iim-sirmaur/.well-known/security.txt
