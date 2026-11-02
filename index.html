@@ -13,6 +13,7 @@
 <meta property="og:description" content="Browse the IIM Sirmaur BMS batch by domain and hard skills and connect on LinkedIn.">
 <meta property="og:image" content="https://akshit99x.github.io/students-for-hire-iim-sirmaur/assets/campus-night.jpg">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="canonical" href="https://akshit99x.github.io/students-for-hire-iim-sirmaur/">
 <link rel="icon" href="assets/logo.png" type="image/png">
 <link rel="stylesheet" href="css/styles.css">
 <script src="js/guard.js"></script>
@@ -52,7 +53,7 @@
 </header>
 
 <div class="sample-banner" id="sampleBanner" hidden>
-  <div class="wrap"><span><b>Profiles are being added.</b> Students are still submitting their domains and hard skills. Details marked <em>Sample</em> are placeholders until the student confirms their own. Names and LinkedIn links are real.</span><button aria-label="Dismiss" id="sampleClose" type="button">×</button></div>
+  <div class="wrap"><span><b>Profiles are being added.</b> Students are still submitting their domains and hard skills. Profiles with details are listed first, and the rest follow as they complete theirs.</span><button aria-label="Dismiss" id="sampleClose" type="button">×</button></div>
 </div>
 
 <main class="talent" id="talent">
@@ -94,7 +95,7 @@
         <div class="fgroup">
           <h4>Profile</h4>
           <label class="check mt-0"><input type="checkbox" id="onlyLinkedin"> LinkedIn available</label>
-          <label class="check"><input type="checkbox" id="onlyDetails"> Student-confirmed details</label>
+          <label class="check"><input type="checkbox" id="onlyDetails"> Domains and skills added</label>
         </div>
 
         <div class="fgroup">
@@ -110,9 +111,9 @@
           <div class="count" id="count" aria-live="polite"></div>
           <label class="sr" for="sort">Sort by</label>
           <select class="input" id="sort">
-            <option value="complete">LinkedIn-ready first</option>
+            <option value="complete">Profiles updated first</option>
             <option value="name">Name (A–Z)</option>
-            <option value="shuffle">Random order (fair)</option>
+            <option value="shuffle">Random order</option>
           </select>
           <div class="viewtoggle" role="group" aria-label="Layout">
             <button type="button" id="vGrid" aria-pressed="true" title="Grid view" aria-label="Grid view">▦</button>
@@ -162,7 +163,7 @@
     <div class="faq">
       <details><summary>How do I contact a student?</summary><p>Open their card and use the LinkedIn button, or write to the Placement Committee and we will coordinate interviews and campus or virtual drives for you.</p></details>
       <details><summary>Which batch is this?</summary><p>The BMS (undergraduate) batch of IIM Sirmaur. Each card shows the student's own domains, hard skills and preferred locations once they confirm them.</p></details>
-      <details><summary>Is everything on a card confirmed by the student?</summary><p>Details marked <em>Sample</em> are placeholders while the batch finishes submitting their profiles. Use the <em>Student-confirmed details</em> filter to see only profiles the student has completed.</p></details>
+      <details><summary>Why do some cards say "coming soon"?</summary><p>The batch is still submitting domains and hard skills. Profiles that are complete are listed first, and you can use the <em>Domains and skills added</em> filter to see only those. Every card already links to the student's LinkedIn where available.</p></details>
       <details><summary>Does the portal track me?</summary><p>No. There are no cookies, analytics or third-party requests. Your shortlist is saved only in your browser and never sent anywhere.</p></details>
       <details><summary>How do I share a filtered view with my team?</summary><p>Click <em>Copy link to this view</em>. The link reopens the same filters, sort order and layout.</p></details>
     </div>
@@ -171,7 +172,7 @@
 
 <footer class="site">
   <div class="wrap">
-    <div class="contact"><h4>Placement Committee</h4><p>IIM Sirmaur · Rajban, Paonta Sahib<br>Sirmaur, Himachal Pradesh<br><a href="mailto:bmspcom1@iimsirmaur.ac.in">bmspcom1@iimsirmaur.ac.in</a></p></div>
+    <div class="contact"><h4>Placement Committee</h4><address>IIM Sirmaur, FFVC+8J, Dhaula Kuan,<br>Dhaula Kuan Himachal Pradesh,<br>Himachal Pradesh 173031, India<br><a href="https://www.google.com/maps/search/?api=1&amp;query=FFVC%2B8J%20Dhaula%20Kuan%20Himachal%20Pradesh%20173031" target="_blank" rel="noopener noreferrer">View on Google Maps ↗</a></address><p><a href="mailto:bmspcom1@iimsirmaur.ac.in">bmspcom1@iimsirmaur.ac.in</a></p></div>
     <div><h4>Explore</h4><p><a href="#talent">Talent pool</a><br><a href="#faq">Recruiter FAQ</a><br><a href="students.html">For students</a></p></div>
     <p class="legal">Made for Operations Management, IIM Sirmaur. Profile data is shared with each student's consent. No cookies, no tracking.</p>
   </div>
@@ -184,6 +185,7 @@
   <button class="btn btn-ghost" id="mailShort" type="button">Email Placecom</button>
   <button class="link" id="clearShort" type="button">Clear</button>
 </div>
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">↑</button>
 <div class="toast" id="toast" role="status"></div>
 <div class="scrim" id="scrim"></div>
 

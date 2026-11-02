@@ -51,11 +51,10 @@
     cgpa: typeof r.cgpa === 'number' && isFinite(r.cgpa) ? r.cgpa : null,
     domains: strList(r.domains), hardSkills: strList(r.hardSkills), clubs: strList(r.clubs), locations: strList(r.locations),
     internship: str(r.internship, 200), summary: str(r.summary, 600),
-    linkedin: safeUrl(r.linkedin), photo: safePhoto(r.photo), sample: r.sample === true,
+    linkedin: safeUrl(r.linkedin), photo: safePhoto(r.photo),
   })).filter((s) => s.id && s.name);
 
   const hasDetails = (s) => s.domains.length > 0 || s.hardSkills.length > 0;
-  const confirmed = (s) => hasDetails(s) && !s.sample;
   const LI = '<svg class="li-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>';
 
   // ---- state ----
@@ -80,7 +79,7 @@
     if (skip !== 'skill' && S.skill.size && !pick(S.smode, [...S.skill], s.hardSkills)) return false;
     if (skip !== 'loc' && S.loc.size && !s.locations.some((l) => S.loc.has(l))) return false;
     if (S.onlyLinkedin && !s.linkedin) return false;
-    if (S.onlyDetails && !confirmed(s)) return false;
+    if (S.onlyDetails && !hasDetails(s)) return false;
     return true;
   }
 
@@ -130,13 +129,11 @@
       <div class="card-top">
         <div class="avatar av${s.name.length % 4}">${av}</div>
         <div><h3><button type="button" data-open="${esc(s.id)}">${esc(s.name)}</button></h3><div class="meta">BMS ${esc(s.batch)}</div></div>
-        ${s.sample && full ? '<span class="tag sample" title="Placeholder details until the student confirms their own">Sample</span>' : ''}
         ${s.cgpa != null ? `<div class="cgpa" title="CGPA out of ${CONFIG.cgpaMax}"><b>${s.cgpa.toFixed(2)}</b><span>CGPA</span></div>` : ''}
       </div>
       ${tags ? `<div class="tags">${tags}</div>` : ''}
       ${facts.length ? `<dl class="facts">${facts.map(([k, v]) => `<dt>${k}</dt><dd>${esc(v)}</dd>`).join('')}</dl>` : ''}
       ${full ? '' : '<p class="pending">Domains and hard skills coming soon.</p>'}
-      ${s.sample && full ? '<p class="sample-note">Placeholder details, awaiting the student.</p>' : ''}
       <div class="card-actions">
         ${s.linkedin ? `<a class="btn btn-blue btn-sm" href="${esc(s.linkedin)}" target="_blank" rel="noopener noreferrer">${LI} LinkedIn</a>` : '<span class="btn btn-line btn-sm disabled" aria-disabled="true">LinkedIn pending</span>'}
         ${full ? `<button class="btn btn-line btn-sm" type="button" data-open="${esc(s.id)}">Quick view</button>` : ''}
@@ -145,10 +142,10 @@
     </article>`;
   }
 
-  // Tiers first (LinkedIn live, then confirmed details, then photo); inside a tier the order is random so nobody is favoured by their name.
-  const score = (s) => (s.linkedin ? 2 : 0) + (confirmed(s) ? 1 : 0) + (s.photo ? 0.5 : 0);
+  // Profiles with domains/skills filled in come first, then LinkedIn, then photo; inside each tier the order is A to Z.
+  const score = (s) => (hasDetails(s) ? 4 : 0) + (s.linkedin ? 2 : 0) + (s.photo ? 1 : 0);
   const SORTS = {
-    complete: (a, b) => score(b) - score(a) || shuffleKey.get(a.id) - shuffleKey.get(b.id),
+    complete: (a, b) => score(b) - score(a) || a.name.localeCompare(b.name),
     name: (a, b) => a.name.localeCompare(b.name),
     shuffle: (a, b) => shuffleKey.get(a.id) - shuffleKey.get(b.id),
   };
@@ -170,7 +167,7 @@
     S.skill.forEach((v) => items.push(['skill', v, v]));
     S.loc.forEach((v) => items.push(['loc', v, v]));
     if (S.onlyLinkedin) items.push(['onlyLinkedin', '', 'LinkedIn available']);
-    if (S.onlyDetails) items.push(['onlyDetails', '', 'Student-confirmed details']);
+    if (S.onlyDetails) items.push(['onlyDetails', '', 'Domains and skills added']);
     $('#active').innerHTML = items.map(([k, v, label]) => `<button class="chip" type="button" data-rm="${k}" data-v="${esc(v)}">${esc(label)} ✕</button>`).join('');
   }
 
@@ -236,7 +233,6 @@
         <div><h2 id="mName">${esc(s.name)}</h2><p>BMS ${esc(s.batch)}${s.cgpa != null ? ` · CGPA ${s.cgpa.toFixed(2)} / ${CONFIG.cgpaMax}` : ''}</p></div>
         <button class="m-close" type="button" data-close aria-label="Close">×</button></div>
       <div class="m-body">
-        ${s.sample && hasDetails(s) ? '<div class="note mt-0">Sample details. These are placeholders until the student confirms their own domains, skills and locations.</div>' : ''}
         ${s.summary ? `<p class="flush">${esc(s.summary)}</p>` : ''}
         ${block('Domains', s.domains.length ? `<div class="tags">${s.domains.map((d, i) => `<span class="tag ${domClass(d)}${i === 0 ? ' primary' : ''}">${esc(d)}${i === 0 ? ' · primary' : ''}</span>`).join('')}</div>` : '')}
         <div class="m-cols">
@@ -330,7 +326,10 @@
       const typing = /^(INPUT|TEXTAREA|SELECT)$/.test((e.target.tagName || ''));
       if (e.key === '/' && !typing && !e.metaKey && !e.ctrlKey && !$('#modal').open) { e.preventDefault(); toggleDrawer(window.innerWidth <= 980); $('#q').focus(); }
     });
-    $('#sampleClose').addEventListener('click', () => { $('#sampleBanner').hidden = true; });
+    $('#sampleClose').addEventListener('click', () => { $('#sampleBanner').hidden = true; try { localStorage.setItem('sfh-banner', '1'); } catch (e) { /* ignore */ } });
+    const top = $('#toTop');
+    window.addEventListener('scroll', () => top.classList.toggle('show', window.scrollY > 900), { passive: true });
+    top.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
   }
   function toggleDrawer(open) { $('#filters').classList.toggle('open', open); $('#scrim').classList.toggle('show', open); }
   function reset() { const keep = { sort: S.sort, view: S.view }; S = Object.assign(fresh(), keep); skillNeedle = ''; $('#skillQ').value = ''; syncControls(); render(); }
@@ -340,5 +339,7 @@
   if (SKILL_GROUPS.length) openGroups.add(SKILL_GROUPS[0][0]);
   S.skill.forEach((v) => { const g = SKILL_GROUPS.find(([, l]) => l.includes(v)); if (g) openGroups.add(g[0]); });
   syncControls(); bind(); renderStats(); render();
-  if (STUDENTS.some((s) => s.sample || !hasDetails(s))) $('#sampleBanner').hidden = false;
+  let bannerSeen = false;
+  try { bannerSeen = localStorage.getItem('sfh-banner') === '1'; } catch (e) { /* storage blocked */ }
+  if (!bannerSeen && STUDENTS.some((s) => !hasDetails(s))) $('#sampleBanner').hidden = false;
 })();

@@ -24,7 +24,11 @@ While students have not submitted their details, run the converter with `--sampl
 python3 scripts/csv_to_data.py data/students.csv --sample
 ```
 
-Only the students listed in `data/sample_ids.txt` (currently the first five) get a repeatable random set, flagged `"sample": true`, and the site labels those cards **Sample**. Everyone else stays empty ("coming soon") until they submit details, and students with real details are never overwritten. Run without `--sample` to publish real data only; the preview banner disappears once nobody is flagged.
+Only the students listed in `data/sample_ids.txt` (currently the first five) get a repeatable random set, flagged `"sample": true` in the data (the site no longer shows a label, so replace these with the student's real answers as soon as you have them). Everyone else stays empty ("coming soon") until they submit details, and students with real details are never overwritten. Run without `--sample` to publish real data only.
+
+### Card order
+
+The default sort is **Profiles updated first**: students with domains or hard skills filled in come first, then those with LinkedIn, then those with a photo, and A to Z inside each group. As more students submit details they move up automatically.
 
 ## Publish on GitHub Pages
 
